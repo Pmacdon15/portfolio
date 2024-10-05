@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 export default function Footer() {
     return (
-        <div className="flex flex-col md:flex-row mt-auto bg-cyan-400 bg-opacity-70 w-full  p-0 md:p-4 gap-2 md:gap-16  items-center md:items-start rounded-md shadow-xl">
+        <div className="flex flex-col md:flex-row mt-auto bg-cyan-400 bg-opacity-70 w-full  p-0 md:p-1 gap-2 md:gap-8  items-center md:items-start rounded-md shadow-xl">
             <div className='flex flex-col p-2 w-2/6 text-center items-center gap-1 md:gap-4'>
                 <h1 className='text-xl text-center items-center'>Contact Info:</h1>
                 <p>Email: <Link
