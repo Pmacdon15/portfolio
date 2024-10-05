@@ -31,7 +31,7 @@ export default function NavBar() {
                 <Link
                     href="/resume"
                     className='hover:scale-110  hover:underline transition-transform duration-200'>Resume</Link>
-                <Link href="/Certifications"
+                <Link href="/certifications"
                     className='hover:scale-110 hover:underline transition-transform duration-200'>Certifications</Link>
             </div>
         </div>
