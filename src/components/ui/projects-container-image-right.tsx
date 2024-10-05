@@ -16,6 +16,13 @@ export default function ProjectContainerRight({ title, text, imagePath, gitHubUr
                             className='hover:scale-110 hover:text-blue-400 hover:underline transition-transform duration-200'
                             href={gitHubUrl}>{linkText}</Link>
                     </p>
+                    {website && (
+                        <p className="flex flex-col indent-4 text-lg md:text-xl text-center justify-center items-center">
+                            Visit the website at: <Link
+                                className='hover:scale-110 hover:text-blue-400 hover:underline transition-transform duration-200'
+                                href={website}>{website}</Link>
+                        </p>
+                    )}
                 </div>
                 <Image src={imagePath} alt="Content Image" width={220} height={220} className="rounded-md self-center md:self-start" />
             </div>
