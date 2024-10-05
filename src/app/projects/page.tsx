@@ -1,6 +1,5 @@
-import Link from "next/link";
 import PageHeader from "@/components/ui/page-header";
-import ContentContainerImageLeft from "@/components/ui/content-container-image-left";
+import ProjectContainer from "@/components/ui/projects-container";
 
 const text1 = `Pat's Pre-trips is a web app that I developed using Type Script, Nextjs, Mui and Auth Kit. It is a pre-trip
             inspection app
@@ -15,11 +14,7 @@ export default function Projects() {
   return (
     <>
       <PageHeader title="Projects" />
-      <ContentContainerImageLeft text={text1} imagePath={'/PreTrips.jpg'}>
-        <p>
-          Test the project out at<Link href={"/"}>hey</Link>
-        </p>
-      </ContentContainerImageLeft>
+      <ProjectContainer text={text1} imagePath={"/PreTrips.jpg"} url={"https://github.com/Pmacdon15/pats-pretrip"} linkText={"Pat's Pre Trips"} />
     </>
   );
 };
