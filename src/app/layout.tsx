@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main className="bg-cyan-500 min-h-svh flex flex-col items-center p-4 md:p-8 gap-4 md:gap-8 bg-[url('/background.png')] bg-cover bg-opacity-50">
+        <main className="bg-cyan-600 min-h-svh flex flex-col items-center p-4 md:p-8 gap-4 md:gap-8  ">
           <Header />
           <NavBar />
           {children}
