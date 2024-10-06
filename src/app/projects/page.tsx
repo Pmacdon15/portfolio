@@ -13,7 +13,7 @@ const projects = [
     further enhancing its capabilities in the future.`,
     imagePath: "/PreTrips.jpg",
     githubUrl: "https://github.com/Pmacdon15/pats-pretrip",
-    url: "https://patspretrips.vercel.app/"
+    url: "https://patspretrips.ca/"
   },
   {
     title: "Pat GPT",
