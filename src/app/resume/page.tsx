@@ -16,7 +16,7 @@ export default function Resume() {
           </div>
           <h1 className="text-4xl">Patrick MacDonald</h1>
           <h1 className="text-3xl">Summary</h1>
-          <p className="text-lg">
+          <p className="text-lg indent-4">
             Motivated and dedicated individual seeking part-time employment in the
             tech industry to gain hands-on experience while completing a Software
             Development Diploma.
