@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Footer() {
     return (
         <div className="flex flex-col md:flex-row mt-auto bg-cyan-400 bg-opacity-70 w-full  p-0 md:p-1 gap-2 md:gap-8  items-center md:items-start rounded-md shadow-xl">
-            <div className='flex flex-col p-2 w-2/6 text-center items-center gap-1 md:gap-4'>
+            <div className='flex flex-col p-2 w-2/6 text-center items-center gap-1 md:gap-2'>
                 <h1 className='text-xl text-center items-center'>Contact Info:</h1>
                 <p>Email: <Link
                     href="mailto:pmacdonald15@gmail.com"
@@ -11,7 +11,7 @@ export default function Footer() {
                 >pmacdonald15@gmail.com</Link></p>
                 <p>Phone: 1-403-975-5053</p>
             </div>
-            <div className='flex flex-col w-2/6 p-2 gap-1 md:gap-4 text-center items-center'>
+            <div className='flex flex-col w-2/6 p-2 gap-1 md:gap-2 text-center items-center'>
                 <h1 className='text-xl text-center'>Socials:</h1>
                 <p><Link
                     href="https://www.linkedin.com/in/patrick-macdonald-231640285/"
@@ -25,7 +25,7 @@ export default function Footer() {
                     </Link>
                 </p>
             </div>
-            <div className='flex flex-col p-2 text-center w-2/6 gap-1 md:gap-4'>
+            <div className='flex flex-col p-2 text-center w-2/6 gap-1 md:gap-2'>
                 <h1 className='text-xl text-center'>Location:</h1>
                 <p>Calgary, Alberta, </p>
                 <p>Canada</p>
