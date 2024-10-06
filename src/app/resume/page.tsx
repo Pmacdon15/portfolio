@@ -65,7 +65,7 @@ export default function Resume() {
               and area and as far south as the United States border.
             </li>
             <li>
-              Reviewing the next day's trips and mapping any unfamiliar areas.
+              Reviewing the next day&apos;s trips and mapping any unfamiliar areas.
             </li>
             <li>
               Responsibilities included; ensuring the vehicle is ready to
