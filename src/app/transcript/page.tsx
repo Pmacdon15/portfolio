@@ -7,7 +7,7 @@ export default function Transcripts() {
       <div className='bg-cyan-300 w-fit  rounded-md shadow-xl p-4'>
         <div className="flex flex-col gap-2 rounded-md p-4 bg-[url('/paper.jpeg')] bg-cover">
           <Image 
-            src="/transcript.png" 
+            src="/certs/transcript.png" 
             alt="Transcript" 
             width={800} 
             height={600} 
