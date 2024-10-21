@@ -9,12 +9,11 @@ const text1 = `I‘m a passionate software developer with a specializing in buil
                 drive impactful solutions, collaborate with like-minded professionals on innovative projects, and continue growing as a developer. I‘m eager 
                 to apply my strong work ethic and problem-solving abilities to drive innovation and growth in tech. `;
 
-const text2 = `Currently in my last year at Bow Valley College, I‘m now seeking opportunities in the software industry where I can leverage my expertise 
-                to drive impactful solutions, collaborate with like-minded professionals on innovative projects, and continue growing as a developer. I‘m eager to start 
-                collaborating with a team of like-minded professionals on innovative projects and continue growing as a developer. `;
+const text2 = `As a driven software developer, I'm excited to expand my expertise and collaborate with like-minded professionals on cutting-edge projects. With a solid foundation in modern web development,
+               I'm eager to explore new technologies and innovative solutions."`;
 
-const text3 = `This wealth of experience has honed my skills in safety, logistics, and customer service, making me a reliable and skilled professional 
-                in the transportation industry. What I bring into development from driving is impeccable time management and taking initiative in problem solving and dealing with uniqie situations.`;
+const text3 = `prior experience in the transportation industry has instilled in me valuable skills in logistics, problem-solving, and customer service. As a developer, I leverage these strengths to deliver timely, 
+              reliable, and innovative solutions, approaching each challenge with initiative and creative thinking.`;
 
 export default function Home() {
   return (
