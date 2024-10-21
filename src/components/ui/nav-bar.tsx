@@ -11,7 +11,7 @@ export default function NavBar() {
     };
    
     return (
-        <div className='bg-cyan-300  w-5/6 md:w-fit rounded-md shadow-xl md:hover:scale-105 transition-transform duration-200 p-1'>
+        <div className='bg-cyan-400 bg-opacity-50 w-5/6 md:w-fit rounded-md shadow-xl md:hover:scale-105 transition-transform duration-200 '>
             <button
                 className="md:hidden text-2xl hover:scale-110 transition-transform duration-200 mx-auto my-2"
                 onClick={toggleMenu}
