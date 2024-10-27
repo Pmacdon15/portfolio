@@ -3,11 +3,12 @@ import ContentContainerImageLeft from "@/components/ui/content-container-image-l
 import ContentContainerImageRight from "@/components/ui/content-container-image-right";
 import ContentContainer from "@/components/ui/content-container";
 
-const text1 = `I‘m a passionate software developer with a specializing in building high-performance applications using Next.js and TypeScript. 
-                With a strong foundation in modern web development. Currently, I‘m exploring the capabilities of Vercel for seamless hosting and deployment. 
-                Currently in my last year at Bow Valley College, I‘m now seeking opportunities in the software industry where I can leverage my expertise to 
-                drive impactful solutions, collaborate with like-minded professionals on innovative projects, and continue growing as a developer. I‘m eager 
-                to apply my strong work ethic and problem-solving abilities to drive innovation and growth in tech. `;
+const text1 = `I’m a passionate software developer specializing in high-performance applications with Next.js 
+                and TypeScript. I love the flexibility of Next.js and the seamless deployment that Vercel offers, making every 
+                project smoother and more efficient. I’m also excited about exploring the many storage tools and options available 
+                to enhance functionality. With a strong foundation in state management, I excel at creating custom hooks to boost 
+                performance. Currently in my final year at Bow Valley College, I’m eager to bring my problem-solving skills and dedication
+                to a collaborative team where I can drive innovation and grow in the software industry `;
 
 const text2 = `As a driven software developer, I'm excited to expand my expertise and collaborate with like-minded professionals on cutting-edge projects. With a solid foundation in modern web development,
                I'm eager to explore new technologies and innovative solutions."`;
