@@ -4,8 +4,8 @@ export default function Resume() {
   return (
     <>
       <PageHeader title="Resume" />
-      <div className='bg-cyan-300 w-full md:w-5/6  rounded-md shadow-xl p-4'>
-        <div className="flex flex-col  gap-2 rounded-md p-4 bg-[url('/paper.jpeg')] bg-cover">
+      <div className='bg-cyan-300 shadow-xl p-4 rounded-md w-full md:w-5/6'>
+        <div className="flex flex-col gap-2 bg-[url('/paper.jpeg')] bg-cover p-4 rounded-md">
           <div className="ml-auto">
             <div>
               <p><i>1-403-975-5053</i></p>
@@ -45,7 +45,7 @@ export default function Resume() {
           </ul>
 
           <h1 className="text-2xl"><b>BowValley College</b></h1>
-          <p className="text-lg"><i>Software Development<br />GPA:3.92</i></p>
+          <p className="text-lg"><i>Software Development<br />GPA:3.94</i></p>
           <ul className="ml-4 list-disc list-inside">
             <li>
               Currently enrolled in the Software Development Diploma program at
