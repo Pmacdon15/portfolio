@@ -38,10 +38,10 @@ function ContactInfo() {
   return (
     <div className="ml-auto">
       <div>
-        <p><i>1-403-975-5053</i></p>
-        <p><i>pmacdonald15@gmail.com</i></p>
-        <p><i>github.com/Pmacdon15</i></p>
-        <p><i>Calgary, Alberta</i></p>
+        <p className="italic">1-403-975-5053</p>
+        <p className="italic">pmacdonald15@gmail.com</p>
+        <p className="italic">github.com/Pmacdon15</p>
+        <p className="italic">Calgary, Alberta</p>
       </div>
     </div >
   )
@@ -124,7 +124,7 @@ function WorkExperience({ experiences }: { experiences?: Experience[] }) {
     <div>
       <h1 className="font-bold text-3xl">Work Experience</h1>
       {experiences?.map((exp) => (
-        <div key={exp.company}>
+        <div className="p-2" key={exp.company}>
           <Job company={exp.company} position={exp.position} dates={exp.dates} responsibilities={exp.responsibilities} />
         </div>
       ))}

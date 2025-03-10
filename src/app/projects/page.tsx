@@ -94,6 +94,7 @@ export default function Projects() {
     <>
       <PageHeader title="Projects" />
       {projects.map((project, index) => {
+        //Switch between left and right image containers
         const ProjectContainer = index % 2 === 0 ? ProjectContainerLeft : ProjectContainerRight;
         return (
           <ProjectContainer
