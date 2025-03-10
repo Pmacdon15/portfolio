@@ -2,7 +2,17 @@
 import PageHeader from "@/components/ui/page-header";
 import React from 'react';
 
-interface Experience {
+interface Education {
+  school: string;
+  program: string;
+  gpa?: string;
+  details: string[];
+};
+
+interface Skills {
+  description: string;
+}
+interface Work {
   company: string;
   position: string;
   dates: string;
@@ -23,10 +33,10 @@ export default function Resume() {
           <ContactInfo />
           <h1 className="text-4xl">Patrick MacDonald</h1>
           <Summary />
-          <Education />
-          <Skills />
+          <Education education={education} />
+          <Skills skills={skills} />
           <Certifications certifications={certifications} />
-          <WorkExperience experiences={experiences} />
+          <Work experiences={experiences} />
         </div>
       </div>
     </>
@@ -60,38 +70,42 @@ function Summary() {
   )
 }
 
-function Education() {
+function Education({ education }: { education: Education[] }) {
   return (
     <>
       <h1 className="font-bold text-3xl">Education</h1>
-      <h1 className="font-bold text-2xl italic">BowValley College</h1>
-      <p className="text-lg"><i>Software Development<br />GPA:3.94</i></p>
-      <ul className="ml-4 list-disc list-inside">
-        <li>
-          Currently enrolled in the Software Development Diploma program at
-          Bow Valley College.
-        </li>
-        <li>Expected graduation date is May 2025.</li>
-      </ul>
+      {education.map((education, index) => (
+        <div className="indent-4" key={index}>
+          <SchoolExperience school={education.school} program={education.program} gpa={education.gpa} details={education.details} />
+        </div>
+      ))}
     </>
   )
 }
 
-function Skills() {
+function SchoolExperience({ school, program, gpa, details }: Education) {
+  return (
+    <div className="p-2">
+      <h1 className="font-bold text-3xl">{school}</h1>
+      <p className="text-lg italic">{program}</p>
+      <p>GPA: {gpa}</p>
+      <ul className="ml-4 list-disc list-inside">
+        {details.map((detail, index) => (
+          <li key={index}>{detail}</li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+function Skills({ skills }: { skills?: Skills[] }) {
   return (
     <>
       <h1 className="font-bold text-3xl">Skills</h1>
       <ul className="ml-4 list-disc list-inside">
-        <li>Team collaboration and leadership</li>
-        <li>Programming Languages: Java, C#, Python, TypeScript, JavaScript, HTML, CSS, SQL, C++</li>
-        <li>Tools/Technologies:
-          VS Code, VS Studio, Android Studio,
-          React, NextJS, Node.js, jQuery, Express,
-          Vercel, TypeScript, Tailwind CSS
-        </li>
-        <li>Excellent communication, customer service, time management, organization, and decision-making</li>
-        <li>Experience operating tractor-trailers and buses</li>
-        <li>Adaptable in fast-paced environments</li>
+        {skills?.map((skill, index) => (
+          <li key={index}>{skill.description}</li>
+        ))}
       </ul>
     </>
   )
@@ -119,20 +133,20 @@ function Certification({ name, issuer }: Certification) {
   )
 }
 
-function WorkExperience({ experiences }: { experiences?: Experience[] }) {
+function Work({ experiences }: { experiences?: Work[] }) {
   return (
     <div>
       <h1 className="font-bold text-3xl">Work Experience</h1>
       {experiences?.map((exp) => (
         <div className="p-2" key={exp.company}>
-          <Job company={exp.company} position={exp.position} dates={exp.dates} responsibilities={exp.responsibilities} />
+          <WorkExperience company={exp.company} position={exp.position} dates={exp.dates} responsibilities={exp.responsibilities} />
         </div>
       ))}
     </div>
   )
 };
 
-function Job({ company, position, dates, responsibilities }: Experience) {
+function WorkExperience({ company, position, dates, responsibilities }: Work) {
   return (
     <>
       <h1 className="font-bold text-2xl italic">{company}</h1>
@@ -149,7 +163,45 @@ function Job({ company, position, dates, responsibilities }: Experience) {
   )
 };
 
-const experiences: Experience[] = [
+// Data
+const education: Education[] = [
+  {
+    school: "BowValley College",
+    program: "Software Development",
+    gpa: "3.94",
+    details: [
+      "Currently enrolled in the Software Development Diploma program at Bow Valley College.",
+      "Expected graduation date is May 2025."
+    ]
+  }
+];
+
+const skills: Skills[] = [
+  { description: "Team collaboration and leadership" },
+  { description: "Programming Languages: Java, C#, Python, TypeScript, JavaScript, HTML, CSS, SQL, C++" },
+  { description: "Tools/Technologies: VS Code, VS Studio, Android Studio, React, NextJS, Node.js, jQuery, Express, Vercel, TypeScript, Tailwind CSS" },
+  { description: "Excellent communication, customer service, time management, organization, and decision-making" },
+  { description: "Experience operating tractor-trailers and buses" },
+  { description: "Adaptable in fast-paced environments" }
+];
+
+const certifications: Certification[] = [
+  {
+    name: "Python Developer",
+    issuer: "W3Schools"
+  },
+  {
+    name: "C# Developer",
+    issuer: "W3Schools"
+  },
+  {
+    name: "Networking Essentials",
+    issuer: "CISCO"
+  }
+];
+
+
+const experiences: Work[] = [
   {
     company: 'Sparks Eggs',
     position: 'Egg Delivery Driver',
@@ -179,17 +231,3 @@ const experiences: Experience[] = [
 ];
 
 
-const certifications: Certification[] = [
-  {
-    name: "Python Developer",
-    issuer: "W3Schools"
-  },
-  {
-    name: "C# Developer",
-    issuer: "W3Schools"
-  },
-  {
-    name: "Networking Essentials",
-    issuer: "CISCO"
-  }
-];
