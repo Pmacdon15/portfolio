@@ -31,11 +31,34 @@ const projects = [
     url: ""
   },
   {
+    title: "Free QR Code Generator",
+    text: `I developed a modern, user-friendly QR code generator application using Next.js 15 and TypeScript, 
+    focusing on simplicity and ease of use. The application allows users to instantly generate QR codes for any URL 
+    and download them as PNG files. Built with performance in mind, it uses React's latest features including hooks 
+    for state management and refs for DOM manipulation. The interface is clean and responsive, implemented with 
+    Tailwind CSS and custom styling, ensuring a consistent experience across all devices. The application features 
+    automatic URL formatting, adding 'https://' when needed, and uses the react-qr-code library for reliable QR code 
+    generation. The download functionality converts SVG to PNG format on the client side, providing users with 
+    high-quality, downloadable QR codes. This project demonstrates my ability to create practical, user-focused web 
+    applications while maintaining clean code architecture and modern development practices.`,
+    imagePath: "/qrcode.png",
+    githubUrl: "https://github.com/Pmacdon15/free-qrcode",
+    url: "https://free-qrcode-pmacdon15.vercel.app/"
+  },
+  {
+    title: "Pat Chat 2.0",
+    text: `PatChat 2.0 is a real-time chat application built utilizing TypeScript, Next Js and Ably, 
+    enabling seamless user interactions.I want to remake PatChat with Next and host it on vercel for practice.`,
+    imagePath: "/PatChat2.png",
+    githubUrl: "https://github.com/Pmacdon15/patchat2.0",
+    url: "https://www.patchat.ca"
+  },
+  {
     title: "Pat Chat",
     text: `PatChat is a real-time chat application built utilizing JavaScript, WebSockets, and Node.js, enabling seamless user interactions.`,
     imagePath: "/PatChat.png",
     githubUrl: "https://github.com/Pmacdon15/PatChat",
-    url: "https://www.patchat.ca"
+    url: ""
   },
   {
     title: "Guess The Celebrity Game",
@@ -52,8 +75,19 @@ const projects = [
     url: ""
   },
   {
+    title: "Next-Todo",
+    text: `I developed a modern full-stack Todo application using Next.js 15 and TypeScript, focusing on creating a seamless and responsive user experience. 
+    The application features robust user authentication via multiple OAuth providers (GitHub, GitLab, and Discord) using NextAuth.js, and real-time data management with TanStack Query. I implemented a clean, 
+    intuitive interface using Shadcn UI components and Tailwind CSS, ensuring a consistent look across devices. The backend utilizes Next.js API routes and server actions for secure data operations, with data
+    persisted in a Neon PostgreSQL database. 
+    This project helped me gain deep insights into full-stack development, state management, authentication flows, and modern React patterns including server components and client-side mutations.`,
+    "imagePath": "/todo-next.png",
+    "githubUrl": "https://github.com/Pmacdon15/todo-next",
+    "url": "https://todo-next-pmacdon15.vercel.app/"
+  },
+  {
     title: "Todo",
-    text:` I developed a todo app using JavaScript, Express, Node.js, JWT, and
+    text: ` I developed a todo app using JavaScript, Express, Node.js, JWT, and
         MySQL. The APIs are secured through user authorization facilitated by
         JWT and cookies. Users can create an account, log in, and perform CRUD
         operations on todos. Additionally, the app features a signup page for
@@ -68,7 +102,7 @@ const projects = [
   },
   {
     title: "Shenanigans Mac-Server-Face",
-    text:`This server is a central hub for conducting HID attacks, optimized for use with the O.MG cable and other HID injection tools. 
+    text: `This server is a central hub for conducting HID attacks, optimized for use with the O.MG cable and other HID injection tools. 
                 It seamlessly interfaces with devices, executing PowerShell and Bash scripts on target systems. The server boasts an extensive script library, 
                 including utilities for WiFi password extraction, file mapping, and whimsical pranks like Rick Rolls and fake ransomware attacks. With robust 
                 storage and dual base script versions for Ducky and HID devices, users can easily initiate and manage scripts. Offering a versatile and 
@@ -107,7 +141,7 @@ export default function Projects() {
             website={project.url}
           />
         );
-      })}      
+      })}
     </>
   );
 };
