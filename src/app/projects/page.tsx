@@ -5,14 +5,14 @@ import ProjectContainerRight from "@/components/ui/projects-container-image-righ
 const projects = [
   {
     title: "Pat's Pre-Trips",
-    text: `Pat's Pre-trips is a web app that I developed using Type Script, Nextjs, Mui and Auth Kit. It is a pre-trip
+    text: `Pat's Pre-trips is a web app that I developed using TypeScript, Next.js, Tailwind CSS, and Auth.js. It is a pre-trip
     inspection app that allows users to create an account, log in, and perform inspections and list on route defects. The app
-    features Auth Kit by Work OS for signup page and sign in as well as backend authentication. Additionally,
+    features authentication and authorization with Auth.js for secure signup and sign-in processes. Additionally,
     the app includes a current trips and past trips page. The app is designed to be user-friendly and intuitive,
     providing a seamless experience for users. I am proud of the outcome of this project and look forward to
     further enhancing its capabilities in the future.`,
     imagePath: "/PreTrips.jpg",
-    githubUrl: "https://github.com/Pmacdon15/pats-pretrip",
+    githubUrl: "https://github.com/Pmacdon15/pats-pretrips-2.0.git",
     url: "https://patspretrips.ca/"
   },
   {
