@@ -11,7 +11,7 @@ const text1 = `I’m a passionate software developer specializing in high-perfor
                 to a collaborative team where I can drive innovation and grow in the software industry `;
 
 const text2 = `As a driven software developer, I'm excited to expand my expertise and collaborate with like-minded professionals on cutting-edge projects. With a solid foundation in modern web development,
-               I'm eager to explore new technologies and innovative solutions."`;
+               I'm eager to explore new technologies and innovative solutions.`;
 
 const text3 = `prior experience in the transportation industry has instilled in me valuable skills in logistics, problem-solving, and customer service. As a developer, I leverage these strengths to deliver timely, 
               reliable, and innovative solutions, approaching each challenge with initiative and creative thinking.`;
