@@ -12,7 +12,7 @@ const projects = [
     providing a seamless experience for users. I am proud of the outcome of this project and look forward to
     further enhancing its capabilities in the future.`,
     imagePath: "/PreTrips.jpg",
-    githubUrl: "https://github.com/Pmacdon15/pats-pretrips-2.0.git",
+    githubUrl: "https://github.com/Pmacdon15/pats-pretrips",
     url: "https://patspretrips.ca/"
   },
   {
@@ -43,7 +43,7 @@ const projects = [
     applications while maintaining clean code architecture and modern development practices.`,
     imagePath: "/qrcode.png",
     githubUrl: "https://github.com/Pmacdon15/free-qrcode",
-    url: "https://free-qrcode-pmacdon15.vercel.app/"
+    url: "https://freeqrcode.patmac.ca/"
   },
   {
     title: "Pat Chat 2.0",
@@ -83,7 +83,7 @@ const projects = [
     This project helped me gain deep insights into full-stack development, state management, authentication flows, and modern React patterns including server components and client-side mutations.`,
     "imagePath": "/todo-next.png",
     "githubUrl": "https://github.com/Pmacdon15/todo-next",
-    "url": "https://todo-next-pmacdon15.vercel.app/"
+    "url": "https://www.next-todo.patmac.ca/"
   },
   {
     title: "Todo",
