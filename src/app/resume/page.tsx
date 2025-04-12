@@ -1,5 +1,3 @@
-// import ContentContainer from "@/components/ui/content-container";
-import PageHeader from "@/components/ui/page-header";
 import React from 'react';
 
 interface Education {
@@ -26,8 +24,7 @@ interface Certification {
 
 export default function Resume() {
   return (
-    <>
-      <PageHeader title="Resume" />
+    <>     
       <div className='bg-cyan-300 shadow-xl p-4 rounded-md w-full md:w-5/6'>
         <div className="flex flex-col gap-2 bg-[url('/paper.jpeg')] bg-cover p-4 rounded-md">
           <ContactInfo />

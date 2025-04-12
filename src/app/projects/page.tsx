@@ -1,4 +1,3 @@
-import PageHeader from "@/components/ui/page-header";
 import ProjectContainerLeft from "@/components/ui/projects-container-image-left";
 import ProjectContainerRight from "@/components/ui/projects-container-image-right";
 
@@ -125,8 +124,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <>
-      <PageHeader title="Projects" />
+    <>    
       {projects.map((project, index) => {
         //Switch between left and right image containers
         const ProjectContainer = index % 2 === 0 ? ProjectContainerLeft : ProjectContainerRight;

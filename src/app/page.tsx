@@ -1,4 +1,4 @@
-import PageHeader from "@/components/ui/page-header";
+
 import ContentContainerImageLeft from "@/components/ui/content-container-image-left";
 import ContentContainerImageRight from "@/components/ui/content-container-image-right";
 import ContentContainer from "@/components/ui/content-container";
@@ -18,8 +18,7 @@ const text3 = `prior experience in the transportation industry has instilled in 
 
 export default function Home() {
   return (
-    <>
-      <PageHeader title='About Me' />
+    <>      
       <ContentContainerImageLeft text={text1} imagePath={'/limoDriver.jpg'} />
       <ContentContainerImageRight text={text2} imagePath={'/truckDriver.jpg'} />
       <ContentContainer text={text3} />
