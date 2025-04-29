@@ -10,7 +10,7 @@ const projects = [
     the app includes a current trips and past trips page. The app is designed to be user-friendly and intuitive,
     providing a seamless experience for users. I am proud of the outcome of this project and look forward to
     further enhancing its capabilities in the future.`,
-    imagePath: "/PreTrips.jpg",
+    imagePath: "/PreTrips.png",
     githubUrl: "https://github.com/Pmacdon15/pats-pretrips",
     url: "https://patspretrips.ca/"
   },
