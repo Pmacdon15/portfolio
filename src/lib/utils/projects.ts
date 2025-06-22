@@ -8,7 +8,7 @@ export const projects = [
     Built using PHP, JavaScript, and CSS, this plugin enhances the online shopping experience, bridging the gap between physical
     product visualization and digital storefronts. A huge step forward for Polymuse and their customers!`,
     imagePath: "/polymuse.jpeg",
-    githubUrl: "https://github.com/Dream-Team-Seven/polymuse-woocommerce",   
+    githubUrl: "https://github.com/Dream-Team-Seven/polymuse-woocommerce",
   },
   {
     title: "Pat's Pre-Trips",
@@ -21,6 +21,19 @@ export const projects = [
     imagePath: "/PreTrips.png",
     githubUrl: "https://github.com/Pmacdon15/pats-pretrips",
     url: "https://patspretrips.ca/"
+  },
+  {
+    title: "Pat's Blogs",
+    text: `Pat's Blogs my blog site is a modern web application that enables me to easily upload new blog posts,
+    manage their publication status, and enrich content with images, code blocks, and formatted text. The app features an 
+    intuitive editor for composing posts, allowing for seamless integration of multimedia and code snippets to enhance readability
+    and engagement. Built with a Neon database for reliable and scalable data storage, and deployed on Vercel for fast, global 
+    delivery, the site ensures a smooth and efficient blogging experience. This project demonstrates my ability to build 
+    full-featured content management systems with robust backend integration and a polished user interface.
+  `,
+    imagePath: "/blog.png",
+    githubUrl: "https://github.com/Pmacdon15/blog",
+    url: "https://blog.patmac.ca/"
   },
   {
     title: "Pat GPT",
