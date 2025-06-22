@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-export default function ProjectContainerRight({ title, text, imagePath, gitHubUrl, linkText, website}: { title:string, text: string, imagePath: string, gitHubUrl: string, linkText: string , website:string}) {
+export default function ProjectContainerRight({ title, text, imagePath, gitHubUrl, linkText, website}: { title:string, text: string, imagePath: string, gitHubUrl: string, linkText: string , website?:string}) {
     return (
         <div className='bg-cyan-300 w-full md:w-5/6  rounded-md shadow-xl p-4'>
             <div className="flex flex-col md:flex-row gap-2 rounded-md p-4 bg-[url('/paper.jpeg')] bg-cover">
