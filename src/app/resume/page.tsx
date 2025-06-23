@@ -29,7 +29,6 @@ export default function Resume() {
   );
 };
 
-
 function ContactInfo() {
   return (
     <div className="ml-auto">
@@ -55,4 +54,3 @@ function Summary() {
     </>
   )
 }
-
