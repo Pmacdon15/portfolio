@@ -10,7 +10,19 @@ export const projects = [
     client communication.`,
     imagePath: "/landscapefriend.png",
     githubUrl: "https://github.com/Pmacdon15/landscape-friend",
-    url:"https:landscapefriend.com"
+    url:"https://landscapefriend.com"
+  },
+   {
+    title: "CLock Out",
+    text: `"Introducing Clock-Out, a cutting-edge time tracking app built with Next.js, designed to 
+    streamline your workflow with a user-friendly punch clock system. With robust 
+    features like secure authentication, organization management, and visual analytics, 
+    Clock-Out empowers teams to efficiently monitor working hours and boost productivity. 
+    Check out the tech stack that powers this intuitive app, and explore how it can transform 
+    your team's time management.`,
+    imagePath: "/clockout.png",
+    githubUrl: "https://github.com/Pmacdon15/clock-out",
+    url:"https://clockout.patmac.ca"
   },
   {
     title: "PolyMuse Wordpress WooCommerce Plugin",
