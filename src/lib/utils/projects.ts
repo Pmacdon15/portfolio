@@ -1,4 +1,17 @@
+
+
 export const projects = [
+    {
+    title: "Landscape Friend",
+    text: `Landscape Friend is a comprehensive SaaS (Software as a Service) platform designed to 
+    empower landscapers and lawn care businesses. It provides a streamlined solution for managing and 
+    tracking all aspects of lawn maintenance and snow clearing operations. From scheduling services to 
+    sending professional emails and invoices, Landscape Friend aims to simplify daily workflows and enhance 
+    client communication.`,
+    imagePath: "/landscapefriend.png",
+    githubUrl: "https://github.com/Pmacdon15/landscape-friend",
+    url:"https:landscapefriend.com"
+  },
   {
     title: "PolyMuse Wordpress WooCommerce Plugin",
     text: `a custom WordPress WooCommerce plugin developed for Polymuse!
