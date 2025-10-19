@@ -8,8 +8,7 @@ export default function Footer() {
                 <p>Email: <Link
                     href="mailto:patrick@patmac.ca"
                     className='flex hover:underline hover:scale-110 hover:text-blue-500 '
-                >patrick@patmac.ca</Link></p>
-                <p>Phone: 1-403-975-5053</p>
+                >patrick@patmac.ca</Link></p>                
             </div>
             <div className='flex flex-col w-2/6 p-2 gap-1 md:gap-2 text-center items-center'>
                 <h1 className='text-xl text-center'>Socials:</h1>
