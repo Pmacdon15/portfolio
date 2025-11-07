@@ -1,17 +1,25 @@
-import Image from "next/image";
-const certs = ['cSharp.png', 'networking.png', 'python.png',];
+import Image from 'next/image'
+
+const certs = ['cSharp.png', 'networking.png', 'python.png']
 
 export default function Page() {
-  return (
-          <>
-        {certs.map((cert, index) => (
-          <div key={index} className='bg-cyan-300 w-fit  rounded-md shadow-xl p-4'>
-            <div className="flex flex-col gap-2 rounded-md p-4 bg-[url('/paper.jpeg')] bg-cover">
-              <Image  src={`/certs/${cert}`} alt={cert} width={600} height={600} />
-            </div>
-          </div>
-
-        ))}
-      </>  
-  );
-};
+	return (
+		<>
+			{certs.map((cert, index) => (
+				<div
+					className="w-fit rounded-md bg-cyan-300 p-4 shadow-xl"
+					key={index}
+				>
+					<div className="flex flex-col gap-2 rounded-md bg-[url('/paper.jpeg')] bg-cover p-4">
+						<Image
+							alt={cert}
+							height={600}
+							src={`/certs/${cert}`}
+							width={600}
+						/>
+					</div>
+				</div>
+			))}
+		</>
+	)
+}
