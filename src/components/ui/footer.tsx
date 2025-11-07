@@ -1,3 +1,4 @@
+import { Mail, Map as MapIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 export default function Footer() {
@@ -7,12 +8,12 @@ export default function Footer() {
 				<h1 className="items-center text-center text-xl">
 					Contact Info:
 				</h1>
-				<p>
-					Email:{' '}
+				<p className="flex gap-2">
 					<Link
-						className="flex hover:scale-110 hover:text-blue-500 hover:underline"
+						className="flex gap-2 hover:scale-110 hover:text-blue-500 hover:underline"
 						href="mailto:patrick@patmac.ca"
 					>
+						<Mail />
 						patrick@patmac.ca
 					</Link>
 				</p>
@@ -40,8 +41,8 @@ export default function Footer() {
 					</Link>
 				</p>
 			</div>
-			<div className="flex w-2/6 flex-col gap-1 p-2 text-center md:gap-2">
-				<h1 className="text-center text-xl">Location:</h1>
+			<div className="flex w-2/6 flex-col items-center gap-1 p-2 text-center md:gap-2">
+				<MapIcon />
 				<p>Calgary, Alberta, </p>
 				<p>Canada</p>
 			</div>

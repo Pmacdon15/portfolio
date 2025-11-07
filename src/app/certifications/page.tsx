@@ -12,7 +12,6 @@ export default function Page() {
 				>
 					<div className="flex flex-col gap-2 rounded-md bg-[url('/paper.jpeg')] bg-cover p-4">
 						<Image
-						
 							alt={cert}
 							height={1200}
 							src={`/certs/${cert}`}

@@ -1,4 +1,3 @@
-
 import Certifications from '@/components/ui/resume/certifications'
 import EducationComponent from '@/components/ui/resume/education'
 import ProjectsComponent from '@/components/ui/resume/projects'
