@@ -11,7 +11,7 @@ import { experiences } from '@/lib/utils/resume/work'
 
 export default function Resume() {
 	return (
-		<div className="w-full rounded-md bg-cyan-300 p-4 shadow-xl md:w-5/6">
+		<div className="w-full rounded-md bg-secondary p-2 shadow-xl md:w-5/6">
 			<div className="flex flex-col gap-2 rounded-md bg-[url('/paper.jpeg')] bg-cover p-4">
 				<ContactInfo />
 				<h1 className="text-4xl">Patrick MacDonald</h1>

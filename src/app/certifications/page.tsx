@@ -7,7 +7,7 @@ export default function Page() {
 		<>
 			{certs.map((cert, index) => (
 				<div
-					className="w-fit rounded-md bg-cyan-300 p-4 shadow-xl"
+					className="w-fit rounded-md bg-secondary p-2 shadow-xl"
 					key={index}
 				>
 					<div className="flex flex-col gap-2 rounded-md bg-[url('/paper.jpeg')] bg-cover p-4">

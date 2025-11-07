@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 export default function Footer() {
 	return (
-		<div className="mt-auto flex w-full flex-col items-center gap-2 rounded-md bg-cyan-400 bg-opacity-50 p-0 shadow-xl md:flex-row md:items-start md:gap-8 md:p-1">
+		<div className="mt-auto flex w-full flex-col items-center gap-2 rounded-md bg-secondary bg-opacity-50 p-0 shadow-xl md:flex-row md:items-start md:gap-8 md:p-1">
 			<div className="flex w-2/6 flex-col items-center gap-1 p-2 text-center md:gap-2">
 				<h1 className="items-center text-center text-xl">
 					Contact Info:

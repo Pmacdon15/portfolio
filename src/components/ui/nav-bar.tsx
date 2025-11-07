@@ -12,7 +12,7 @@ export default function NavBar() {
 	}
 
 	return (
-		<div className="w-5/6 rounded-md bg-cyan-400 bg-opacity-50 p-2 shadow-xl transition-transform duration-200 md:w-fit md:p-0 md:hover:scale-105">
+		<div className="w-5/6 rounded-md bg-secondary bg-opacity-50 p-2 shadow-xl transition-transform duration-200 md:w-fit md:p-0 md:hover:scale-105">
 			<div className="flex items-center justify-start">
 				<button
 					className="my-1 text-2xl transition-transform duration-200 hover:scale-110 md:hidden"
@@ -31,7 +31,7 @@ export default function NavBar() {
 				</div>
 			</div>
 			<div
-				className={`flex-col p-1 text-xl md:flex md:flex-row ${isOpen ? 'flex rounded-md bg-cyan-200' : 'hidden'} md:justify-start`}
+				className={`flex-col p-1 text-xl md:flex md:flex-row ${isOpen ? 'flex rounded-md' : 'hidden'} gap-2 md:justify-start`}
 			>
 				{' '}
 				{/* Align left on desktop */}
@@ -39,20 +39,6 @@ export default function NavBar() {
 					currentSection={currentSection}
 					isOpen={isOpen}
 					sectionName="About Me"
-					setCurrentSection={setCurrentSection}
-					toggleMenu={toggleMenu}
-				/>
-				<Section
-					currentSection={currentSection}
-					isOpen={isOpen}
-					sectionName="Projects"
-					setCurrentSection={setCurrentSection}
-					toggleMenu={toggleMenu}
-				/>
-				<Section
-					currentSection={currentSection}
-					isOpen={isOpen}
-					sectionName="Transcript"
 					setCurrentSection={setCurrentSection}
 					toggleMenu={toggleMenu}
 				/>

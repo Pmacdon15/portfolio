@@ -1,8 +1,9 @@
 'use client'
+import Autoplay from 'embla-carousel-autoplay'
 import type { Route } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import {
 	Carousel,
@@ -37,11 +38,23 @@ export function CarouselProjects() {
 		}
 	}
 
+	const plugin = React.useRef(
+		Autoplay({ delay: 2000, stopOnInteraction: true }),
+	)
 	return (
-		<div className="w-full rounded-sm border p-8 lg:w-1/2">
+		<div className="w-full rounded-sm border bg-secondary p-2 p-8 shadow-xl lg:w-5/6">
 			<h1 className="font-semibold text-2xl">Projects</h1>
 
-			<Carousel className="w-full">
+			<Carousel
+				className="w-full"
+				onMouseEnter={plugin.current.stop}
+				onMouseLeave={() => plugin.current.play()}
+				opts={{
+					align: 'start',
+					loop: true,
+				}}
+				plugins={[plugin.current]}
+			>
 				<CarouselContent>
 					{projects.map((project) => (
 						<CarouselItem
