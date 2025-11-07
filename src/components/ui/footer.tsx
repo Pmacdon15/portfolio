@@ -1,34 +1,50 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Image from 'next/image'
+import Link from 'next/link'
 export default function Footer() {
-    return (
-        <div className="flex flex-col md:flex-row mt-auto bg-cyan-400 bg-opacity-50 w-full  p-0 md:p-1 gap-2 md:gap-8  items-center md:items-start rounded-md shadow-xl">
-            <div className='flex flex-col p-2 w-2/6 text-center items-center gap-1 md:gap-2'>
-                <h1 className='text-xl text-center items-center'>Contact Info:</h1>
-                <p>Email: <Link
-                    href="mailto:patrick@patmac.ca"
-                    className='flex hover:underline hover:scale-110 hover:text-blue-500 '
-                >patrick@patmac.ca</Link></p>                
-            </div>
-            <div className='flex flex-col w-2/6 p-2 gap-1 md:gap-2 text-center items-center'>
-                <h1 className='text-xl text-center'>Socials:</h1>
-                <p><Link
-                    href="https://www.linkedin.com/in/patrick-macdonald-231640285/"
-                >
-                    <Image src="/linkedin.png" alt="LinkedIn Logo" width={80} height={80} />
-                </Link>
-                </p>
-                <p>
-                    <Link href="https://github.com/Pmacdon15">
-                        <Image src="/gHub.png" alt="GitHub Logo" width={70} height={80} />
-                    </Link>
-                </p>
-            </div>
-            <div className='flex flex-col p-2 text-center w-2/6 gap-1 md:gap-2'>
-                <h1 className='text-xl text-center'>Location:</h1>
-                <p>Calgary, Alberta, </p>
-                <p>Canada</p>
-            </div>
-        </div>
-    );
-};
+	return (
+		<div className="mt-auto flex w-full flex-col items-center gap-2 rounded-md bg-secondary bg-opacity-50 p-0 shadow-xl md:flex-row md:items-start md:gap-8 md:p-1">
+			<div className="flex w-2/6 flex-col items-center gap-1 p-2 text-center md:gap-2">
+				<h1 className="items-center text-center text-xl">
+					Contact Info:
+				</h1>
+				<p>
+					Email:{' '}
+					<Link
+						className="flex hover:scale-110 hover:text-blue-500 hover:underline"
+						href="mailto:patrick@patmac.ca"
+					>
+						patrick@patmac.ca
+					</Link>
+				</p>
+			</div>
+			<div className="flex w-2/6 flex-col items-center gap-1 p-2 text-center md:gap-2">
+				<h1 className="text-center text-xl">Socials:</h1>
+				<p>
+					<Link href="https://www.linkedin.com/in/patrick-macdonald-231640285/">
+						<Image
+							alt="LinkedIn Logo"
+							height={80}
+							src="/linkedin.png"
+							width={80}
+						/>
+					</Link>
+				</p>
+				<p>
+					<Link href="https://github.com/Pmacdon15">
+						<Image
+							alt="GitHub Logo"
+							height={80}
+							src="/gHub.png"
+							width={70}
+						/>
+					</Link>
+				</p>
+			</div>
+			<div className="flex w-2/6 flex-col gap-1 p-2 text-center md:gap-2">
+				<h1 className="text-center text-xl">Location:</h1>
+				<p>Calgary, Alberta, </p>
+				<p>Canada</p>
+			</div>
+		</div>
+	)
+}

@@ -1,168 +1,100 @@
-
-
 export const projects = [
-    {
-    title: "Landscape Friend",
-    text: `Landscape Friend is a comprehensive SaaS (Software as a Service) platform designed to 
-    empower landscapers and lawn care businesses. It provides a streamlined solution for managing and 
-    tracking all aspects of lawn maintenance and snow clearing operations. From scheduling services to 
-    sending professional emails and invoices, Landscape Friend aims to simplify daily workflows and enhance 
-    client communication.`,
-    imagePath: "/landscapefriend.png",
-    githubUrl: "https://github.com/Pmacdon15/landscape-friend",
-    url:"https://landscapefriend.com"
-  },
-   {
-    title: "CLock Out",
-    text: `"Introducing Clock-Out, a cutting-edge time tracking app built with Next.js, designed to 
-    streamline your workflow with a user-friendly punch clock system. With robust 
-    features like secure authentication, organization management, and visual analytics, 
-    Clock-Out empowers teams to efficiently monitor working hours and boost productivity. 
-    Check out the tech stack that powers this intuitive app, and explore how it can transform 
-    your team's time management.`,
-    imagePath: "/clockout.png",
-    githubUrl: "https://github.com/Pmacdon15/clock-out",
-    url:"https://clockout.patmac.ca"
-  },
-  {
-    title: "PolyMuse Wordpress WooCommerce Plugin",
-    text: `a custom WordPress WooCommerce plugin developed for Polymuse!
-    Polymus helps customers scan 3D models of their products, and now they're expanding into 
-    e-commerce plugins. Our team created a seamless integration for WooCommerce, allowing customers to 
-    easily display 3D models of their products and experience Augmented Reality (AR) views directly on their mobile devices.
-    Built using PHP, JavaScript, and CSS, this plugin enhances the online shopping experience, bridging the gap between physical
-    product visualization and digital storefronts. A huge step forward for Polymuse and their customers!`,
-    imagePath: "/polymuse.jpeg",
-    githubUrl: "https://github.com/Dream-Team-Seven/polymuse-woocommerce",
-  },
-  {
-    title: "Pat's Pre-Trips",
-    text: `Pat's Pre-trips is a web app that I developed using TypeScript, Next.js, Tailwind CSS, and Auth.js. It is a pre-trip
-    inspection app that allows users to create an account, log in, and perform inspections and list on route defects. The app
-    features authentication and authorization with Auth.js for secure signup and sign-in processes. Additionally,
-    the app includes a current trips and past trips page. The app is designed to be user-friendly and intuitive,
-    providing a seamless experience for users. I am proud of the outcome of this project and look forward to
-    further enhancing its capabilities in the future.`,
-    imagePath: "/PreTrips.png",
-    githubUrl: "https://github.com/Pmacdon15/pats-pretrips",
-    url: "https://patspretrips.ca/"
-  },
-  {
-    title: "Pat's Blogs",
-    text: `Pat's Blogs my blog site is a modern web application that enables me to easily upload new blog posts,
-    manage their publication status, and enrich content with images, code blocks, and formatted text. The app features an 
-    intuitive editor for composing posts, allowing for seamless integration of multimedia and code snippets to enhance readability
-    and engagement. Built with a Neon database for reliable and scalable data storage, and deployed on Vercel for fast, global 
-    delivery, the site ensures a smooth and efficient blogging experience. This project demonstrates my ability to build 
-    full-featured content management systems with robust backend integration and a polished user interface.
-  `,
-    imagePath: "/blog.png",
-    githubUrl: "https://github.com/Pmacdon15/blog",
-    url: "https://blog.patmac.ca/"
-  },
-  {
-    title: "Pat GPT",
-    text: `PatGPT is an Android app that I developed using Java and XML. It
-              serves as both a chat and image generator application, leveraging the
-              power of the GPT-3 Turbo and DALL-E-3 models. Currently, it's a work
-              in progress, serving as the final assignment for my mobile app
-              development class. While I'm satisfied with the app's overall layout
-              and functionality, there are several enhancements I plan to implement.
-              These include enabling users to share images directly instead of just
-              links, facilitating text sharing, incorporating a history feature, and
-              integrating an SQLite database for improved data management.`,
-    imagePath: "/PatGPT.png",
-    githubUrl: "https://github.com/Pmacdon15/PatGPT",
-    url: ""
-  },
-  {
-    title: "Free QR Code Generator",
-    text: `I developed a modern, user-friendly QR code generator application using Next.js 15 and TypeScript, 
-    focusing on simplicity and ease of use. The application allows users to instantly generate QR codes for any URL 
-    and download them as PNG files. Built with performance in mind, it uses React's latest features including hooks 
-    for state management and refs for DOM manipulation. The interface is clean and responsive, implemented with 
-    Tailwind CSS and custom styling, ensuring a consistent experience across all devices. The application features 
-    automatic URL formatting, adding 'https://' when needed, and uses the react-qr-code library for reliable QR code 
-    generation. The download functionality converts SVG to PNG format on the client side, providing users with 
-    high-quality, downloadable QR codes. This project demonstrates my ability to create practical, user-focused web 
-    applications while maintaining clean code architecture and modern development practices.`,
-    imagePath: "/qrcode.png",
-    githubUrl: "https://github.com/Pmacdon15/free-qrcode",
-    url: "https://freeqrcode.patmac.ca/"
-  },
-  {
-    title: "Pat Chat 2.0",
-    text: `PatChat 2.0 is a real-time chat application built utilizing TypeScript, Next Js and Ably, 
-    enabling seamless user interactions.I want to remake PatChat with Next and host it on vercel for practice.`,
-    imagePath: "/PatChat2.png",
-    githubUrl: "https://github.com/Pmacdon15/patchat2.0",
-    url: "https://www.patchat.ca"
-  },
-  {
-    title: "Pat Chat",
-    text: `PatChat is a real-time chat application built utilizing JavaScript, WebSockets, and Node.js, enabling seamless user interactions.`,
-    imagePath: "/PatChat.png",
-    githubUrl: "https://github.com/Pmacdon15/PatChat",
-    url: ""
-  },
-  {
-    title: "Guess The Celebrity Game",
-    text: `I developed 'Guess The Celebrity Game' using Java within Android
-                  Studio, aiming to create an entertaining and interactive experience
-                  for users. This project served as a pivotal learning opportunity,
-                  allowing me to delve deeper into Android Studio, Java programming, and
-                  the Android operating system. Throughout the development process, I
-                  acquired a comprehensive understanding of essential concepts such as
-                  saving and restoring state, as well as exploring various built-in
-                  functions that can be overridden to customize app behavior.`,
-    imagePath: "/GuessingGame.png",
-    githubUrl: "https://github.com/Pmacdon15/Guess-The-Celebrity-Game",
-    url: ""
-  },
-  {
-    title: "Next-Todo",
-    text: `I developed a modern full-stack Todo application using Next.js 15 and TypeScript, focusing on creating a seamless and responsive user experience. 
-    The application features robust user authentication via multiple OAuth providers (GitHub, GitLab, and Discord) using NextAuth.js, and real-time data management with TanStack Query. I implemented a clean, 
-    intuitive interface using Shadcn UI components and Tailwind CSS, ensuring a consistent look across devices. The backend utilizes Next.js API routes and server actions for secure data operations, with data
-    persisted in a Neon PostgreSQL database. 
-    This project helped me gain deep insights into full-stack development, state management, authentication flows, and modern React patterns including server components and client-side mutations.`,
-    "imagePath": "/todo-next.png",
-    "githubUrl": "https://github.com/Pmacdon15/todo-next",
-    "url": "https://www.next-todo.patmac.ca/"
-  },
-  {
-    title: "Todo",
-    text: ` I developed a todo app using JavaScript, Express, Node.js, JWT, and
-        MySQL. The APIs are secured through user authorization facilitated by
-        JWT and cookies. Users can create an account, log in, and perform CRUD
-        operations on todos. Additionally, the app features a signup page for
-        new users. Crafting this project was both enjoyable and enlightening. It provided
-        me with valuable insights into user authentication and API protection
-        using JWT and cookies. Furthermore, I deepened my understanding of
-        Express and gained proficiency in MySQL. I eagerly anticipate
-        furthering my expertise in these areas in the future.`,
-    imagePath: "/Todo.png",
-    githubUrl: "https://github.com/Pmacdon15/todo",
-    url: ""
-  },
-  {
-    title: "Shenanigans Mac-Server-Face",
-    text: `This server is a central hub for conducting HID attacks, optimized for use with the O.MG cable and other HID injection tools. 
-                It seamlessly interfaces with devices, executing PowerShell and Bash scripts on target systems. The server boasts an extensive script library, 
-                including utilities for WiFi password extraction, file mapping, and whimsical pranks like Rick Rolls and fake ransomware attacks. With robust 
-                storage and dual base script versions for Ducky and HID devices, users can easily initiate and manage scripts. Offering a versatile and 
-                user-friendly platform for practical data extraction and creative explorations.`,
-    imagePath: "/Shenanigans.jpeg",
-    githubUrl: "https://github.com/Pmacdon15/MacServerFace",
-    url: ""
-  },
-  {
-    title: "Next Phisher",
-    text: `Next Phisher is a Next.js-based phishing framework featuring a decoy website that redirects users to a customizable phishing page. 
-                Admins can seamlessly redirect users and capture sensitive information, which is displayed in the administrative panel. Ideal for security testing 
-                and awareness training, Next Phisher provides a sophisticated and manageable phishing solution.`,
-    imagePath: "/Shenanigans.jpeg",
-    githubUrl: "https://github.com/Pmacdon15/nextphisher",
-    url: ""
-  }
-];
+	{
+		id: 1,
+		title: 'Landscape Friend',
+		text: 'A SaaS platform for landscapers and lawn care businesses to manage services, send emails, and invoices.',
+		imagePath: '/landscapefriend.png',
+		url: 'https://landscapefriend.com',
+		githubUrl: 'https://github.com/Pmacdon15/landscape-friend',
+	},
+	{
+		id: 2,
+		title: 'CLock Out',
+		text: 'A time tracking app with secure authentication, organization management, and visual analytics.',
+		imagePath: '/clockout.png',
+		githubUrl: 'https://github.com/Pmacdon15/clock-out',
+		url: 'https://clockout.patmac.ca',
+	},
+	{
+		id: 3,
+		title: 'PolyMuse Wordpress WooCommerce Plugin',
+		text: 'A custom plugin for Polymuse, enabling 3D model display and AR views on mobile devices.',
+		imagePath: '/polymuse.jpeg',
+		githubUrl: 'https://github.com/Dream-Team-Seven/polymuse-woocommerce',
+	},
+	{
+		id: 4,
+		title: "Pat's Pre-Trips",
+		text: 'A pre-trip inspection app with authentication, current and past trips, and defect listing.',
+		imagePath: '/patspretrips1.png',
+		githubUrl: 'https://github.com/Pmacdon15/pats-pretrips',
+		url: 'https://patspretrips.ca/',
+	},
+	{
+		id: 5,
+		title: "Pat's Blogs",
+		text: 'A modern blog site with image, code, and text upload, and Neon database storage.',
+		imagePath: '/blogs.png',
+		githubUrl: 'https://github.com/Pmacdon15/blog',
+		url: 'https://blog.patmac.ca/',
+	},
+	{
+		id: 6,
+		title: 'Pat GPT',
+		text: 'An Android chat and image generator app using GPT-3 Turbo and DALL-E-3 models.',
+		imagePath: '/PatGPT.png',
+		githubUrl: 'https://github.com/Pmacdon15/PatGPT',
+	},
+	{
+		id: 7,
+		title: 'Free QR Code Generator',
+		text: 'A modern QR code generator with URL formatting and PNG download.',
+		imagePath: '/qrcode.png',
+		githubUrl: 'https://github.com/Pmacdon15/free-qrcode',
+		url: 'https://freeqrcode.patmac.ca/',
+	},
+	{
+		id: 8,
+		title: 'Pat Chat 2.0',
+		text: 'A real-time chat application built with TypeScript, Next.js, and Ably.',
+		imagePath: '/PatChat2.png',
+		githubUrl: 'https://github.com/Pmacdon15/patchat2.0',
+		url: 'https://www.patchat.ca',
+	},
+	{
+		id: 10,
+		title: 'Guess The Celebrity Game',
+		text: 'An Android game developed in Java, focusing on saving and restoring state.',
+		imagePath: '/GuessingGame.png',
+		githubUrl: 'https://github.com/Pmacdon15/Guess-The-Celebrity-Game',
+	},
+	{
+		id: 11,
+		title: 'Next-Todo',
+		text: 'A full-stack Todo app with OAuth authentication, TanStack Query, and Neon PostgreSQL database.',
+		imagePath: '/todo-next.png',
+		githubUrl: 'https://github.com/Pmacdon15/todo-next',
+		url: 'https://www.next-todo.patmac.ca/',
+	},
+	{
+		id: 12,
+		title: 'Todo',
+		text: 'A todo app with JWT authentication, CRUD operations, and MySQL database.',
+		imagePath: '/Todo.png',
+		githubUrl: 'https://github.com/Pmacdon15/todo',
+	},
+	{
+		id: 13,
+		title: 'Shenanigans Mac-Server-Face',
+		text: 'A server for HID attacks, executing PowerShell and Bash scripts on target systems.',
+		imagePath: '/Shenanigans.jpeg',
+		githubUrl: 'https://github.com/Pmacdon15/MacServerFace',
+	},
+	{
+		id: 14,
+		title: 'Next Phisher',
+		text: 'A Next.js phishing framework with decoy website and customizable phishing page.',
+		imagePath: '/Shenanigans.jpeg',
+		githubUrl: 'https://github.com/Pmacdon15/nextphisher',
+	},
+]
