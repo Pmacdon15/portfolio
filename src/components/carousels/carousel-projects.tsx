@@ -42,7 +42,7 @@ export function CarouselProjects() {
 		Autoplay({ delay: 2000, stopOnInteraction: true }),
 	)
 	return (
-		<div className="w-full rounded-sm border bg-secondary p-2 p-8 shadow-xl lg:w-5/6">
+		<div className="w-full rounded-sm border bg-secondary p-2 shadow-xl lg:w-5/6">
 			<h1 className="font-semibold text-2xl">Projects</h1>
 
 			<Carousel

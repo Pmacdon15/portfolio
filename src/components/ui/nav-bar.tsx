@@ -77,7 +77,7 @@ function Section({
 	const isCurrent = sectionName === currentSection
 	return (
 		<Link
-			className={`rounded-sm border-cyan-300 p-2 transition duration-200 ${isCurrent ? 'bg-gradient-to-r from-cyan-500 to-blue-500 shadow-xl' : 'hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 hover:shadow-xl'}`}
+			className={`rounded-sm border-cyan-300 p-2 transition duration-200 ${isCurrent && 'bg-linear-to-r from-cyan-500 to-blue-500 shadow-xl'} hover:bg-linear-to-r hover:from-cyan-500 hover:to-blue-500 hover:shadow-xl`}
 			href={`/${sectionName.toLocaleLowerCase().split(' ')[0] === 'about' ? '/' : sectionName.toLocaleLowerCase()}`}
 			onClick={() => {
 				if (isOpen) toggleMenu()
