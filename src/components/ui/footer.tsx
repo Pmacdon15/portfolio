@@ -18,7 +18,7 @@ export default function Footer() {
 					</Link>
 				</p>
 			</div>
-			<div className="flex w-2/6 flex-col items-center gap-1 p-2 text-center md:gap-2">
+			<div className="flex w-2/6 flex-col gap-1 items-center p-2 text-center md:gap-2">
 				<h1 className="text-center text-xl">Socials:</h1>
 				<p>
 					<Link href="https://www.linkedin.com/in/patrick-macdonald-231640285/">
