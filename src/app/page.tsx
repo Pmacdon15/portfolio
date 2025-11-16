@@ -3,18 +3,20 @@ import ContentContainer from '@/components/ui/content-container'
 import ContentContainerImageLeft from '@/components/ui/content-container-image-left'
 import ContentContainerImageRight from '@/components/ui/content-container-image-right'
 
-const text1 = `I’m a passionate software developer specializing in high-performance applications with Next.js 
-                and TypeScript. I love the flexibility of Next.js and the seamless deployment that Vercel offers, making every 
-                project smoother and more efficient. I’m also excited about exploring the many storage tools and options available 
-                to enhance functionality. With a strong foundation in state management, I excel at creating custom hooks to boost 
-                performance. Currently in my final year at Bow Valley College, I’m eager to bring my problem-solving skills and dedication
-                to a collaborative team where I can drive innovation and grow in the software industry `
+const text1 = `Just graduated college for software development at Bow Valley College I'm passionate in both the cliche and literal sense. I have a love for making websites, it seems like the greatest equalizer.
+				My self a solo dev with only 1 user has access to the same hardware as billion dollar companies with services such as Vercel and AWS. A site I build can scale up and handle ad many users as netflix and 
+				has reliability too.
+`
 
-const text2 = `As a driven software developer, I'm excited to expand my expertise and collaborate with like-minded professionals on cutting-edge projects. With a solid foundation in modern web development,
-               I'm eager to explore new technologies and innovative solutions.`
+const text2 = `I've leveraged a great online community that have a "pay as you grow" or "pay as you use" to gain skill and experience working with different service providers such as Clerk, WorkOs, Kinde, Novu, Google Cloud,
+			   Neon, Vercel Blobs to name a few. I believe these skills have allow me to setup and configure new services in to projects with comfort. 
+`
 
-const text3 = `prior experience in the transportation industry has instilled in me valuable skills in logistics, problem-solving, and customer service. As a developer, I leverage these strengths to deliver timely, 
-              reliable, and innovative solutions, approaching each challenge with initiative and creative thinking.`
+const text3 = `My framework of choice is NextJs, and of corse I use Tailwind. What excited me about NextJs its its blend of server and client components with the added layer of static and dynamic content. NextJs rendering
+				strategy cached components is really interesting to me especially the tactics you can use to keep a component static. I also very interested in what Svelte is doing with the way they fetch data on the client or sever 
+				and components have access to the values instead of prop drilling. Although most of my projects are with NextJs I'm very open to learning and playing around with other frameworks and langues. 
+				Speaking of which Type Script or Java Script? TS all day the and type gymnastics saves you 10 fold in the long run. Anyways if you've got this far thank you. Please reach out.      
+`
 
 export default function Home() {
 	return (

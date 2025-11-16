@@ -17,7 +17,7 @@ export default function ContentContainerImageLeft({
 				src={imagePath}
 				width={200}
 			/>
-			<p className="flex flex-col items-center justify-center text-center indent-4 text-lg md:text-xl">
+			<p className="flex flex-col items-center justify-center indent-4 text-lg md:text-xl">
 				{text}
 			</p>
 		</ContentContainerWrapper>
