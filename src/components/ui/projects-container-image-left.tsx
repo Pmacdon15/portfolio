@@ -20,8 +20,10 @@ export default function ProjectContainerLeft({
 			<div className="flex flex-col gap-2 rounded-md bg-[url('/paper.jpeg')] bg-cover p-4 md:flex-row">
 				<Image
 					alt="Content Image"
+					blurDataURL={'/placeholder.png'}
 					className="self-center rounded-md md:self-start"
 					height={220}
+					placeholder="blur"
 					src={imagePath}
 					width={220}
 				/>

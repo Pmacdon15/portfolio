@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+
 export default function ProjectContainerRight({
 	title,
 	text,
@@ -48,11 +49,13 @@ export default function ProjectContainerRight({
 				</div>
 				<Image
 					alt="Content Image"
+					blurDataURL={"/placeholder.png"}				
 					className="self-center rounded-md md:self-start"
 					height={220}
+					placeholder="blur"
 					src={imagePath}
 					width={220}
-				/>
+					/>
 			</div>
 		</div>
 	)

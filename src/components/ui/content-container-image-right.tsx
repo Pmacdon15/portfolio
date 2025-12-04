@@ -15,8 +15,10 @@ export default function ContentContainerImageRight({
 			</p>
 			<Image
 				alt="Content Image"
+				blurDataURL={'/placeholder.png'}
 				className="rounded-md"
 				height={200}
+				placeholder="blur"
 				src={imagePath}
 				width={200}
 			/>

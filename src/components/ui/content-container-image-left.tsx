@@ -12,8 +12,10 @@ export default function ContentContainerImageLeft({
 		<ContentContainerWrapper>
 			<Image
 				alt="Content Image"
+				blurDataURL={'/placeholder.png'}
 				className="rounded-md"
 				height={200}
+				placeholder="blur"
 				src={imagePath}
 				width={200}
 			/>
