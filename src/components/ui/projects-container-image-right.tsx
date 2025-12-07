@@ -51,10 +51,10 @@ export default function ProjectContainerRight({
 					alt="Content Image"
 					blurDataURL={"/placeholder.png"}				
 					className="self-center rounded-md md:self-start"
-					height={220}
+					height={1220}
 					placeholder="blur"
 					src={imagePath}
-					width={220}
+					width={1220}
 					/>
 			</div>
 		</div>

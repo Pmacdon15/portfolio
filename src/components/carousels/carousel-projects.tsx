@@ -14,8 +14,10 @@ import {
 } from '@/components/ui/carousel'
 import { projects } from '@/lib/utils/projects'
 import { Button } from '../ui/button'
+import { isMobile } from '@/lib/utils/hooks'
 
 export function CarouselProjects() {
+	const isMobileDevice = isMobile()
 	const [fullScreenImage, setFullScreenImage] = useState<string | null>(null)
 
 	const handleImageClick = (imagePath: string) => {
@@ -122,8 +124,8 @@ export function CarouselProjects() {
 						</CarouselItem>
 					))}
 				</CarouselContent>
-				<CarouselPrevious />
-				<CarouselNext />
+				{isMobileDevice && <CarouselPrevious />}
+				{isMobileDevice && <CarouselNext />}
 			</Carousel>
 
 			{fullScreenImage && (
