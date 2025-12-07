@@ -124,8 +124,8 @@ export function CarouselProjects() {
 						</CarouselItem>
 					))}
 				</CarouselContent>
-				{isMobileDevice && <CarouselPrevious />}
-				{isMobileDevice && <CarouselNext />}
+				{!isMobileDevice && <CarouselPrevious />}
+				{!isMobileDevice && <CarouselNext />}
 			</Carousel>
 
 			{fullScreenImage && (
