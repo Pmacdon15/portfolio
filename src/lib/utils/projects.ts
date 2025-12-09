@@ -86,6 +86,14 @@ export const projects = [
 	},
 	{
 		id: 12,
+		title: 'Github Status',
+		text: 'View a Github users stats or link a stats card to your Github README.md',
+		imagePath: '/GithubStats.png',
+		githubUrl: 'https://github.com/Pmacdon15/github-stats.git',
+		url: 'https://gh-stats.patmac.ca/',
+	},
+	{
+		id: 13,
 		title: 'Next-Todo',
 		text: 'A full-stack Todo app with OAuth authentication, TanStack Query, and Neon PostgreSQL database.',
 		imagePath: '/todo-next.png',
@@ -93,14 +101,14 @@ export const projects = [
 		url: 'https://www.next-todo.patmac.ca/',
 	},
 	{
-		id: 13,
+		id: 14,
 		title: 'Shenanigans Mac-Server-Face',
 		text: 'A server for HID attacks, executing PowerShell and Bash scripts on target systems.',
 		imagePath: '/Shenanigans.jpeg',
 		githubUrl: 'https://github.com/Pmacdon15/MacServerFace',
 	},
 	{
-		id: 14,
+		id: 15,
 		title: 'Next Phisher',
 		text: 'A Next.js phishing framework with decoy website and customizable phishing page.',
 		imagePath: '/Shenanigans.jpeg',
