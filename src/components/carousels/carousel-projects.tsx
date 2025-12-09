@@ -70,13 +70,13 @@ export function CarouselProjects() {
 										{project.title}
 									</h1>
 								</CardHeader>
-								<CardContent className="">
+								<CardContent className="mt-[-24]">
 									<span className="">{project.text}</span>
 								</CardContent>
 								<CardContent className="flex">
 									<button
 										aria-label={`View ${project.title} image`}
-										className="mx-auto max-h-[200px] cursor-pointer rounded-sm border-2 transition-transform duration-300 hover:scale-150"
+										className="mx-auto max-h-[250px] cursor-pointer overflow-hidden rounded-sm border-2"
 										onClick={() =>
 											handleImageClick(project.imagePath)
 										}
@@ -90,10 +90,10 @@ export function CarouselProjects() {
 									>
 										<Image
 											alt={`Project Image ${project.id}`}
-											className="mx-auto"
-											height={200}
+											className="mx-auto overflow-hidden"
+											height={300}
 											src={project.imagePath}
-											width={200}
+											width={300}
 										/>
 									</button>
 								</CardContent>
