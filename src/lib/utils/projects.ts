@@ -16,6 +16,22 @@ export const projects = [
 		url: 'https://clockout.patmac.ca',
 	},
 	{
+		id: 6,
+		title: "Pat's Blogs",
+		text: 'A modern blog site with image, code, and text upload, and Neon database storage.',
+		imagePath: '/blogs.png',
+		githubUrl: 'https://github.com/Pmacdon15/blog',
+		url: 'https://blog.patmac.ca/',
+	},
+		{
+		id: 6,
+		title: "Days Since Last Vs Code Fork",
+		text: 'Kinda of a joke about how long we can go with out a VS Code fork',
+		imagePath: '/dayssince.png',
+		githubUrl: 'https://github.com/Pmacdon15/days-since',
+		url: 'https://dayssincelastvscodefork.patmac.ca/',
+	},
+	{
 		id: 3,
 		title: 'Your Next Site',
 		text: 'Need a website? We can help visit yournextsite.ca and send us a message.',
@@ -37,14 +53,6 @@ export const projects = [
 		imagePath: '/patspretrips1.png',
 		githubUrl: 'https://github.com/Pmacdon15/pats-pretrips',
 		url: 'https://patspretrips.ca/',
-	},
-	{
-		id: 6,
-		title: "Pat's Blogs",
-		text: 'A modern blog site with image, code, and text upload, and Neon database storage.',
-		imagePath: '/blogs.png',
-		githubUrl: 'https://github.com/Pmacdon15/blog',
-		url: 'https://blog.patmac.ca/',
 	},
 	{
 		id: 7,
