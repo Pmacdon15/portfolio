@@ -12,9 +12,9 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from '@/components/ui/carousel'
+import { isMobile } from '@/lib/utils/hooks'
 import { projects } from '@/lib/utils/projects'
 import { Button } from '../ui/button'
-import { isMobile } from '@/lib/utils/hooks'
 
 export function CarouselProjects() {
 	const isMobileDevice = isMobile()
