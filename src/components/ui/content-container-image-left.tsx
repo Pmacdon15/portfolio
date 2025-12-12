@@ -9,7 +9,7 @@ export default function ContentContainerImageLeft({
 	imagePath: string
 }) {
 	return (
-		<ContentContainerWrapper>
+		<div className='flex flex-col md:flex-row items-center gap-8 p-2 lg:w-5/6'>
 			<Image
 				alt="Content Image"
 				blurDataURL={'/placeholder.png'}
@@ -19,9 +19,11 @@ export default function ContentContainerImageLeft({
 				src={imagePath}
 				width={200}
 			/>
-			<p className="flex flex-col items-center justify-center indent-4 text-lg md:text-xl">
-				{text}
-			</p>
-		</ContentContainerWrapper>
+			<ContentContainerWrapper>
+				<p className="flex flex-col items-center justify-center indent-4 text-lg md:text-xl">
+					{text}
+				</p>
+			</ContentContainerWrapper>
+		</div>
 	)
 }
