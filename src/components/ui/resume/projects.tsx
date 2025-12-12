@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Project } from '@/types/types'
+import { Route } from 'next'
 
 export default function ProjectsComponent({
 	projects,
@@ -25,7 +26,7 @@ function ProjectDisplay({ project }: { project: Project }) {
 			{project.link && (
 				<Link
 					className="text-blue-500 underline"
-					href={project.link}
+					href={project.link as Route}
 					rel="noopener noreferrer"
 					target="_blank"
 				>
