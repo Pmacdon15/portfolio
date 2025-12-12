@@ -1,7 +1,19 @@
-export const isMobile = (): boolean => {
-	const userAgent =
-		typeof window !== 'undefined' ? window.navigator.userAgent : ''
-	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-		userAgent,
-	)
+// useIsSmallScreen.js
+import { useEffect, useState } from 'react'
+
+const useIsSmallScreen = () => {
+	const [isSmallScreen, setIsSmallScreen] = useState(false)
+
+	useEffect(() => {
+		const checkScreenSize = () => {
+			setIsSmallScreen(window.innerWidth <= 880)
+		}
+		checkScreenSize()
+		window.addEventListener('resize', checkScreenSize)
+		return () => window.removeEventListener('resize', checkScreenSize)
+	}, [])
+
+	return isSmallScreen
 }
+
+export default useIsSmallScreen

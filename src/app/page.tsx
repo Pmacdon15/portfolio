@@ -1,4 +1,4 @@
-import { CarouselProjects } from '@/components/carousels/carousel-projects'
+import ProjectsContainer from '@/components/projects-container'
 import ContentContainer from '@/components/ui/content-container'
 import ContentContainerImageLeft from '@/components/ui/content-container-image-left'
 import ContentContainerImageRight from '@/components/ui/content-container-image-right'
@@ -30,7 +30,7 @@ export default function Home() {
 				text={text2}
 			/>
 			<ContentContainer text={text3} />
-			<CarouselProjects />
+			<ProjectsContainer />
 		</>
 	)
 }

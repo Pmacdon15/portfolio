@@ -9,10 +9,12 @@ export default function ContentContainerImageRight({
 	imagePath: string
 }) {
 	return (
-		<ContentContainerWrapper>
-			<p className="flex flex-col items-center justify-center indent-4 text-lg md:text-xl">
-				{text}
-			</p>
+		<div className="flex flex-col md:flex-row items-center gap-8 p-2 lg:w-5/6">
+			<ContentContainerWrapper>
+				<p className="flex flex-col items-center justify-center indent-4 text-lg md:text-xl">
+					{text}
+				</p>
+			</ContentContainerWrapper>
 			<Image
 				alt="Content Image"
 				blurDataURL={'/placeholder.png'}
@@ -22,6 +24,6 @@ export default function ContentContainerImageRight({
 				src={imagePath}
 				width={200}
 			/>
-		</ContentContainerWrapper>
+		</div>
 	)
 }
