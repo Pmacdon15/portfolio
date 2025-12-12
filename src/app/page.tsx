@@ -4,7 +4,7 @@ import ContentContainerImageRight from '@/components/ui/content-container-image-
 import ProjectsContainer from '@/components/ui/projects-container'
 
 const text1 = `Just graduated college for software development at Bow Valley College I'm passionate in both the cliche and literal sense. I have a love for making websites, it seems like the greatest equalizer.
-				My self a solo dev with only 1 user has access to the same hardware as billion dollar companies with services such as Vercel and AWS. A site I build can scale up and handle ad many users as netflix and 
+				My self a solo dev with only 1 user has access to the same hardware as billion dollar companies with services such as Vercel and AWS. A site I build can scale up and handle and many users as netflix and 
 				has reliability too.
 `
 
