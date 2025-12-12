@@ -2,15 +2,25 @@
 import type { Route } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { usePathname } from 'next/navigation' // <-- add this
+import { useEffect, useState } from 'react'
 
 export default function NavBar() {
 	const [isOpen, setIsOpen] = useState(false)
 	const [currentSection, setCurrentSection] = useState('About Me')
+	const pathname = usePathname() // current route
 
-	const toggleMenu = () => {
-		setIsOpen(!isOpen)
-	}
+	// Keep currentSection in sync with the URL
+	useEffect(() => {
+		const cleanPath = pathname === '/' ? '/' : pathname.slice(1)
+		const section =
+			cleanPath === '/'
+				? 'About Me'
+				: cleanPath.charAt(0).toUpperCase() + cleanPath.slice(1)
+		setCurrentSection(section)
+	}, [pathname])
+
+	const toggleMenu = () => setIsOpen(!isOpen)
 
 	return (
 		<div className="w-5/6 rounded-md bg-secondary bg-opacity-50 p-2 shadow-xl transition-transform duration-200 md:w-fit md:p-0 md:hover:scale-105">
@@ -34,8 +44,6 @@ export default function NavBar() {
 			<div
 				className={`flex-col p-1 text-xl md:flex md:flex-row ${isOpen ? 'flex rounded-md' : 'hidden'} gap-2 md:justify-start`}
 			>
-				{' '}
-				{/* Align left on desktop */}
 				<Section
 					currentSection={currentSection}
 					isOpen={isOpen}
