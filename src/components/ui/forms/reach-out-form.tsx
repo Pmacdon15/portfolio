@@ -55,8 +55,8 @@ export function ReachOutForm() {
 			<CardHeader>
 				<CardTitle>Reach out</CardTitle>
 				<CardDescription>
-					Send me a message and we can chat about a job or
-					NEXTJS or some other cool frame work.{' '}
+					Send me a message and we can chat about a job or NEXTJS or
+					some other cool frame work.{' '}
 				</CardDescription>
 			</CardHeader>
 			<CardContent>

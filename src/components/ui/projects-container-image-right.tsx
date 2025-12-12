@@ -30,7 +30,7 @@ export default function ProjectContainerRight({
 						Check projects GitHub at:{' '}
 						<Link
 							className="transition-transform duration-200 hover:scale-110 hover:text-blue-400 hover:underline"
-							href={gitHubUrl}
+							href={gitHubUrl as Route}
 						>
 							{linkText}
 						</Link>
@@ -40,7 +40,7 @@ export default function ProjectContainerRight({
 							Visit the website at:{' '}
 							<Link
 								className="transition-transform duration-200 hover:scale-110 hover:text-blue-400 hover:underline"
-								href={website}
+								href={website as Route}
 							>
 								{website}
 							</Link>

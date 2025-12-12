@@ -1,3 +1,4 @@
+import type { Route } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 export default function ProjectContainerLeft({
@@ -38,7 +39,7 @@ export default function ProjectContainerLeft({
 						Check projects GitHub at:{' '}
 						<Link
 							className="transition-transform duration-200 hover:scale-110 hover:text-blue-400 hover:underline"
-							href={gitHubUrl}
+							href={gitHubUrl as Route}
 						>
 							{linkText}
 						</Link>
@@ -48,7 +49,7 @@ export default function ProjectContainerLeft({
 							Visit the website at:{' '}
 							<Link
 								className="transition-transform duration-200 hover:scale-110 hover:text-blue-400 hover:underline"
-								href={website}
+								href={website as Route}
 							>
 								{website}
 							</Link>

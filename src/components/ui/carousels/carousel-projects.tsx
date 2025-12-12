@@ -99,10 +99,7 @@ export function CarouselProjects() {
 								</CardContent>
 								<CardFooter className="mt-auto flex w-full flex-col gap-4">
 									{project.url && (
-										<Link
-											
-											href={project.url as Route}
-										>
+										<Link href={project.url as Route}>
 											<Button
 												type="button"
 												variant={'outline'}
@@ -113,10 +110,7 @@ export function CarouselProjects() {
 									)}
 
 									{project.githubUrl && (
-										<Link
-											
-											href={project.githubUrl as Route}
-										>
+										<Link href={project.githubUrl as Route}>
 											<Button
 												type="button"
 												variant={'outline'}
