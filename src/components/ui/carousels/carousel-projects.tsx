@@ -14,7 +14,7 @@ import {
 } from '@/components/ui/carousel'
 import useIsSmallScreen from '@/lib/utils/hooks'
 import { projects } from '@/lib/utils/projects'
-import { Button } from '../ui/button'
+import { Button } from '../button'
 
 export function CarouselProjects() {
 	const isMobileDevice = useIsSmallScreen()
@@ -100,10 +100,13 @@ export function CarouselProjects() {
 								<CardFooter className="mt-auto flex w-full flex-col gap-4">
 									{project.url && (
 										<Link
-											className="text-blue-500 underline"
+											
 											href={project.url as Route}
 										>
-											<Button type="button">
+											<Button
+												type="button"
+												variant={'outline'}
+											>
 												{project.title}
 											</Button>
 										</Link>
@@ -111,10 +114,13 @@ export function CarouselProjects() {
 
 									{project.githubUrl && (
 										<Link
-											className="text-blue-500 underline"
+											
 											href={project.githubUrl as Route}
 										>
-											<Button type="button">
+											<Button
+												type="button"
+												variant={'outline'}
+											>
 												Visit the GitHub
 											</Button>
 										</Link>
