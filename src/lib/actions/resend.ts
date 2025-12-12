@@ -18,14 +18,15 @@ export async function sendEmail(values: z.infer<typeof formSchema>) {
 	}
 
 	const { data, error } = await resend.emails.send({
-		from: 'Contact Form <contact@resend.dev>',
-		to: ['pmacdonald15@gmail.com'],
+		from: 'Contact Form <contact@contact.patmac.ca>',
+		to: ['patrick@patmac.ca'],
 		subject: 'Contact Form Filled Out',
 		react: EmailTemplate({
 			name: validatedFields.data.full_name,
 			email: validatedFields.data.email,
 			message: validatedFields.data.message,
 		}),
+		replyTo:validatedFields.data.email
 	})
 
 	console.log('Result: ', data)
