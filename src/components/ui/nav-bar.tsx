@@ -1,4 +1,5 @@
 'use client'
+import type { Route } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -56,6 +57,13 @@ export default function NavBar() {
 					setCurrentSection={setCurrentSection}
 					toggleMenu={toggleMenu}
 				/>
+				<Section
+					currentSection={currentSection}
+					isOpen={isOpen}
+					sectionName="Contact"
+					setCurrentSection={setCurrentSection}
+					toggleMenu={toggleMenu}
+				/>
 			</div>
 		</div>
 	)
@@ -78,7 +86,9 @@ function Section({
 	return (
 		<Link
 			className={`rounded-sm border-cyan-300 p-2 transition duration-200 ${isCurrent && 'bg-linear-to-r from-cyan-500 to-blue-500 shadow-xl'} hover:bg-linear-to-r hover:from-cyan-500 hover:to-blue-500 hover:shadow-xl`}
-			href={`/${sectionName.toLocaleLowerCase().split(' ')[0] === 'about' ? '/' : sectionName.toLocaleLowerCase()}`}
+			href={
+				`/${sectionName.toLocaleLowerCase().split(' ')[0] === 'about' ? '/' : sectionName.toLocaleLowerCase()}` as Route
+			}
 			onClick={() => {
 				if (isOpen) toggleMenu()
 				setCurrentSection(sectionName)

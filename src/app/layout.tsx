@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/next'
+import { Toaster } from 'sonner'
+import { Providers } from '@/components/providers'
 import Footer from '@/components/ui/footer'
 import Header from '@/components/ui/header'
 import NavBar from '@/components/ui/nav-bar'
@@ -28,18 +30,21 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang="en">
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-			>
-				<main className="flex min-h-svh flex-col items-center gap-4 overflow-hidden bg-background p-4 md:gap-8 md:p-8">
-					<Header />
-					<NavBar />
-					{children}
-					<Analytics />
-					<Footer />
-				</main>
-			</body>
-		</html>
+		<Providers>
+			<html lang="en">
+				<body
+					className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+				>
+					<main className="flex min-h-svh flex-col items-center gap-4 overflow-hidden bg-background p-4 md:gap-8 md:p-8">
+						<Header />
+						<NavBar />
+						{children}
+						<Toaster />
+						<Analytics />
+						<Footer />
+					</main>
+				</body>
+			</html>
+		</Providers>
 	)
 }
