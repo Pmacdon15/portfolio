@@ -71,6 +71,14 @@ export const projects = [
 	},
 	{
 		id: 10,
+		title: 'Demos',
+		text: 'A place to demo a few concepts.',
+		imagePath: '/demos.png',
+		githubUrl: 'https://github.com/Pmacdon15/demos',
+		url: 'https://www.demos.patmac.ca',
+	},
+	{
+		id: 11,
 		title: 'Free QR Code Generator',
 		text: 'A modern QR code generator with URL formatting and PNG download.',
 		imagePath: '/qrcode.png',
@@ -78,7 +86,7 @@ export const projects = [
 		url: 'https://freeqrcode.patmac.ca/',
 	},
 	{
-		id: 11,
+		id: 12,
 		title: 'Nasa Media',
 		text: 'A place to see cool things from space.',
 		imagePath: '/nasamedia.png',
@@ -86,7 +94,7 @@ export const projects = [
 		githubUrl: 'https://github.com/Pmacdon15/nasa-images',
 	},
 	{
-		id: 12,
+		id: 13,
 		title: 'Pat Chat 2.0',
 		text: 'A real-time chat application built with TypeScript, Next.js, and Ably.',
 		imagePath: '/PatChat2.png',
@@ -94,14 +102,14 @@ export const projects = [
 		url: 'https://www.patchat.ca',
 	},
 	{
-		id: 13,
+		id: 14,
 		title: 'Guess The Celebrity Game',
 		text: 'An Android game developed in Java, focusing on saving and restoring state.',
 		imagePath: '/GuessingGame.png',
 		githubUrl: 'https://github.com/Pmacdon15/Guess-The-Celebrity-Game',
 	},
 	{
-		id: 14,
+		id: 15,
 		title: 'Github Status',
 		text: 'View a Github users stats or link a stats card to your Github README.md',
 		imagePath: '/GithubStats.png',
@@ -109,7 +117,7 @@ export const projects = [
 		url: 'https://gh-stats.patmac.ca/',
 	},
 	{
-		id: 15,
+		id: 16,
 		title: 'Next-Todo',
 		text: 'A full-stack Todo app with OAuth authentication, TanStack Query, and Neon PostgreSQL database.',
 		imagePath: '/todo-next.png',
@@ -117,14 +125,14 @@ export const projects = [
 		url: 'https://www.next-todo.patmac.ca/',
 	},
 	{
-		id: 16,
+		id: 17,
 		title: 'Shenanigans Mac-Server-Face',
 		text: 'A server for HID attacks, executing PowerShell and Bash scripts on target systems.',
 		imagePath: '/Shenanigans.jpeg',
 		githubUrl: 'https://github.com/Pmacdon15/MacServerFace',
 	},
 	{
-		id: 17,
+		id: 18,
 		title: 'Next Phisher',
 		text: 'A Next.js phishing framework with decoy website and customizable phishing page.',
 		imagePath: '/Shenanigans.jpeg',
