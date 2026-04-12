@@ -58,7 +58,7 @@ export const projects = [
 		id: 8,
 		title: "Pat's Pre-Trips",
 		text: 'A pre-trip inspection app with authentication, current and past trips, and defect listing.',
-		imagePath: '/patspretrips1.png',
+		imagePath: '/pretrips.png',
 		githubUrl: 'https://github.com/Pmacdon15/pats-pretrips',
 		url: 'https://patspretrips.ca/',
 	},
