@@ -24,7 +24,7 @@ export const projects = [
 		githubUrl: 'https://github.com/Pmacdon15/invoices',
 	},
 	{
-		id: 3,
+		id: 4,
 		title: 'Sports Tracker',
 		text: 'Have rental equipment? need to track it? we got you!',
 		imagePath: '/sportstracker.png',
@@ -32,7 +32,7 @@ export const projects = [
 		githubUrl: 'https://github.com/Pmacdon15/sports-tracker-app',
 	},
 	{
-		id: 4,
+		id: 5,
 		title: 'Clock Out',
 		text: 'A time tracking app with secure authentication, organization management, and visual analytics.',
 		imagePath: '/clockout.png',
@@ -40,15 +40,15 @@ export const projects = [
 		url: 'https://clockout.patmac.ca',
 	},
 		{
-		id: 4,
+		id: 6,
 		title: 'Stocks',
 		text: 'The ultimate market simulator. Real-time data, professional tools, and $10k to test your edge.',
-		imagePath: '/clockout.png',
+		imagePath: '/stocks.png',
 		githubUrl: 'https://github.com/Pmacdon15/stocks',
 		url: 'https://stocks.patmac.ca',
 	},
 	{
-		id: 5,
+		id: 7,
 		title: "Pat's Blogs",
 		text: 'A modern blog site with image, code, and text upload, and Neon database storage.',
 		imagePath: '/blogs.png',
@@ -56,7 +56,7 @@ export const projects = [
 		url: 'https://blog.patmac.ca/',
 	},
 	{
-		id: 6,
+		id: 8,
 		title: 'Days Since Last Vs Code Fork',
 		text: 'Kinda of a joke about how long we can go with out a VS Code fork',
 		imagePath: '/dayssince.png',
@@ -64,7 +64,7 @@ export const projects = [
 		url: 'https://dayssincelastvscodefork.patmac.ca/',
 	},
 	{
-		id: 7,
+		id: 9,
 		title: 'Your Next Site',
 		text: 'Need a website? We can help visit yournextsite.ca and send us a message.',
 		imagePath: '/yournextsite.png',
@@ -72,14 +72,14 @@ export const projects = [
 		url: 'https://yournextsite.ca',
 	},
 	{
-		id: 8,
+		id: 10,
 		title: 'PolyMuse Wordpress WooCommerce Plugin',
 		text: 'A custom plugin for Polymuse, enabling 3D model display and AR views on mobile devices.',
 		imagePath: '/polymuse.jpeg',
 		githubUrl: 'https://github.com/Dream-Team-Seven/polymuse-woocommerce',
 	},
 	{
-		id: 9,
+		id: 11,
 		title: "Pat's Pre-Trips",
 		text: 'A pre-trip inspection app with authentication, current and past trips, and defect listing.',
 		imagePath: '/pretrips.png',
@@ -87,14 +87,14 @@ export const projects = [
 		url: 'https://patspretrips.ca/',
 	},
 	{
-		id: 10,
+		id: 12,
 		title: 'Pat GPT',
 		text: 'An Android chat and image generator app using GPT-3 Turbo and DALL-E-3 models.',
 		imagePath: '/PatGPT.png',
 		githubUrl: 'https://github.com/Pmacdon15/PatGPT',
 	},
 	{
-		id: 11,
+		id: 13,
 		title: 'Demos',
 		text: 'A place to demo a few concepts.',
 		imagePath: '/demos.png',
@@ -102,7 +102,7 @@ export const projects = [
 		url: 'https://www.demos.patmac.ca',
 	},
 	{
-		id: 12,
+		id: 14,
 		title: 'Free QR Code Generator',
 		text: 'A modern QR code generator with URL formatting and PNG download.',
 		imagePath: '/qrcode.png',
@@ -110,7 +110,7 @@ export const projects = [
 		url: 'https://freeqrcode.patmac.ca/',
 	},
 	{
-		id: 13,
+		id: 15,
 		title: 'Nasa Media',
 		text: 'A place to see cool things from space.',
 		imagePath: '/nasamedia.png',
@@ -118,7 +118,7 @@ export const projects = [
 		githubUrl: 'https://github.com/Pmacdon15/nasa-images',
 	},
 	{
-		id: 14,
+		id: 16,
 		title: 'Pat Chat 2.0',
 		text: 'A real-time chat application built with TypeScript, Next.js, and Ably.',
 		imagePath: '/PatChat2.png',
@@ -126,14 +126,14 @@ export const projects = [
 		url: 'https://www.patchat.ca',
 	},
 	{
-		id: 15,
+		id: 17,
 		title: 'Guess The Celebrity Game',
 		text: 'An Android game developed in Java, focusing on saving and restoring state.',
 		imagePath: '/GuessingGame.png',
 		githubUrl: 'https://github.com/Pmacdon15/Guess-The-Celebrity-Game',
 	},
 	{
-		id: 16,
+		id: 18,
 		title: 'Github Status',
 		text: 'View a Github users stats or link a stats card to your Github README.md',
 		imagePath: '/GithubStats.png',
@@ -141,7 +141,7 @@ export const projects = [
 		url: 'https://gh-stats.patmac.ca/',
 	},
 	{
-		id: 17,
+		id: 19,
 		title: 'Next-Todo',
 		text: 'A full-stack Todo app with OAuth authentication, TanStack Query, and Neon PostgreSQL database.',
 		imagePath: '/todo-next.png',
@@ -149,14 +149,14 @@ export const projects = [
 		url: 'https://www.next-todo.patmac.ca/',
 	},
 	{
-		id: 18,
+		id: 20,
 		title: 'Shenanigans Mac-Server-Face',
 		text: 'A server for HID attacks, executing PowerShell and Bash scripts on target systems.',
 		imagePath: '/Shenanigans.jpeg',
 		githubUrl: 'https://github.com/Pmacdon15/MacServerFace',
 	},
 	{
-		id: 19,
+		id: 21,
 		title: 'Next Phisher',
 		text: 'A Next.js phishing framework with decoy website and customizable phishing page.',
 		imagePath: '/Shenanigans.jpeg',
