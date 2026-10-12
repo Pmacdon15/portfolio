@@ -14,9 +14,9 @@ export default function Header() {
 				<h1 className="font-bold text-4xl tracking-tight md:text-6xl">
 					<span className="gradient-text">Patrick MacDonald</span>
 				</h1>
-				<p className="max-w-xl text-balance text-base text-muted-foreground md:text-lg">
+				<p className="max-w-xl text-balance text-base text-muted-foreground leading-relaxed md:text-lg">
 					Building fast, reliable web apps with Next.js, TypeScript,
-					and Tailwind — from Calgary, Alberta.
+					and Tailwind — based in Calgary, Alberta.
 				</p>
 			</div>
 		</header>
