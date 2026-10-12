@@ -1,4 +1,5 @@
-import { ArrowUpRight, Github } from 'lucide-react'
+import { GitHubLogoIcon } from '@radix-ui/react-icons'
+import { ArrowUpRight } from 'lucide-react'
 import type { Route } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -62,7 +63,7 @@ export default function ProjectsCards() {
 									type="button"
 									variant="outline"
 								>
-									<Github className="size-4" />
+									<GitHubLogoIcon className="size-4" />
 									Code
 								</Button>
 							</Link>

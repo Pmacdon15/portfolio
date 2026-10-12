@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail, MapPin } from 'lucide-react'
+import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
+import { Mail, MapPin } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Footer() {
@@ -27,14 +28,14 @@ export default function Footer() {
 						className="rounded-xl border border-border bg-muted/50 p-2.5 transition-all hover:scale-110 hover:text-primary"
 						href="https://www.linkedin.com/in/patrick-macdonald-231640285/"
 					>
-						<Linkedin className="size-5" />
+						<LinkedInLogoIcon className="size-5" />
 					</Link>
 					<Link
 						aria-label="GitHub"
 						className="rounded-xl border border-border bg-muted/50 p-2.5 transition-all hover:scale-110 hover:text-primary"
 						href="https://github.com/Pmacdon15"
 					>
-						<Github className="size-5" />
+						<GitHubLogoIcon className="size-5" />
 					</Link>
 				</div>
 			</div>
