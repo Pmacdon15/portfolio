@@ -1,7 +1,9 @@
 export default function PageHeader({ title }: Readonly<{ title: string }>) {
 	return (
-		<div className="w-3/6 rounded-md bg-cyan-400 bg-opacity-70 p-4 text-center shadow-md">
-			<h2 className="0 font-bold text-2xl drop-shadow-2xl">{title}</h2>
+		<div className="w-full text-center md:w-auto">
+			<h2 className="font-bold text-3xl tracking-tight md:text-4xl">
+				<span className="gradient-text">{title}</span>
+			</h2>
 		</div>
 	)
 }

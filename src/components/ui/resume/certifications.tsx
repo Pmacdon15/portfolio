@@ -5,25 +5,26 @@ export default function Certifications({
 	certifications: Certification[]
 }) {
 	return (
-		<>
-			<h1 className="font-bold text-3xl">Certifications</h1>
-			{certifications.map((cert) => (
-				<div className="indent-4" key={cert.name}>
+		<section className="flex flex-col gap-2">
+			<h2 className="font-bold text-2xl">Certifications</h2>
+			<div className="flex flex-col gap-2">
+				{certifications.map((cert) => (
 					<CertificationComponent
 						issuer={cert.issuer}
+						key={cert.name}
 						name={cert.name}
 					/>
-				</div>
-			))}
-		</>
+				))}
+			</div>
+		</section>
 	)
 }
 
 function CertificationComponent({ name, issuer }: Certification) {
 	return (
-		<>
-			<h1 className="font-bold text-lg italic">{name}</h1>
-			<p>{issuer}</p>
-		</>
+		<div className="indent-4">
+			<h3 className="font-semibold text-lg italic">{name}</h3>
+			<p className="text-muted-foreground">{issuer}</p>
+		</div>
 	)
 }

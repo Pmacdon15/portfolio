@@ -35,11 +35,13 @@ export default function RootLayout({
 				<body
 					className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 				>
-					<main className="flex min-h-svh flex-col items-center gap-4 overflow-hidden bg-background p-4 md:gap-8 md:p-8">
+					<main className="mx-auto flex min-h-svh w-full max-w-6xl flex-col items-center gap-6 bg-background px-4 py-6 md:gap-10 md:px-8 md:py-10">
 						<Header />
 						<NavBar />
-						{children}
-						<Toaster />
+						<div className="flex w-full flex-col items-center gap-6 md:gap-10">
+							{children}
+						</div>
+						<Toaster theme="dark" />
 						<Analytics />
 						<Footer />
 					</main>

@@ -5,10 +5,10 @@ export default function WorkComponent({
 	experiences?: Work[]
 }) {
 	return (
-		<div>
-			<h1 className="font-bold text-3xl">Work Experience</h1>
+		<section className="flex flex-col gap-2">
+			<h2 className="font-bold text-2xl">Work Experience</h2>
 			{experiences?.map((exp) => (
-				<div className="p-2" key={exp.company}>
+				<div className="indent-4" key={exp.company}>
 					<WorkExperience
 						company={exp.company}
 						dates={exp.dates}
@@ -18,20 +18,20 @@ export default function WorkComponent({
 					/>
 				</div>
 			))}
-		</div>
+		</section>
 	)
 }
 
 function WorkExperience({ company, position, dates, responsibilities }: Work) {
 	return (
 		<>
-			<h1 className="font-bold text-2xl italic">{company}</h1>
-			<p>
+			<h3 className="font-bold text-xl">{company}</h3>
+			<p className="text-muted-foreground">
 				<i>{position}</i>
 				<br />
 				{dates}
 			</p>
-			<ul className="ml-4 list-inside list-disc">
+			<ul className="ml-5 list-disc space-y-1 text-foreground/90 marker:text-primary">
 				{responsibilities.map((responsibility, index) => (
 					<li key={index}>{responsibility}</li>
 				))}

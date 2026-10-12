@@ -18,8 +18,8 @@ export default function ProjectContainerRight({
 	website?: string
 }) {
 	return (
-		<div className="w-full rounded-md bg-cyan-300 p-4 shadow-xl md:w-5/6">
-			<div className="flex flex-col gap-2 rounded-md bg-[url('/paper.jpeg')] bg-cover p-4 md:flex-row">
+		<div className="surface w-full rounded-2xl p-4 md:w-5/6">
+			<div className="flex flex-col gap-2 rounded-xl p-4 md:flex-row">
 				<div className="flex flex-col justify-center gap-2 rounded-md p-4">
 					<h1 className="items-center justify-center text-center text-2xl md:text-3xl">
 						{title}
@@ -30,7 +30,7 @@ export default function ProjectContainerRight({
 					<p className="flex flex-col items-center justify-center text-center indent-4 text-lg md:text-xl">
 						Check projects GitHub at:{' '}
 						<Link
-							className="transition-transform duration-200 hover:scale-110 hover:text-blue-400 hover:underline"
+							className="transition-transform duration-200 hover:scale-110 hover:text-primary hover:underline"
 							href={gitHubUrl as Route}
 						>
 							{linkText}
@@ -40,7 +40,7 @@ export default function ProjectContainerRight({
 						<p className="flex flex-col items-center justify-center text-center indent-4 text-lg md:text-xl">
 							Visit the website at:{' '}
 							<Link
-								className="transition-transform duration-200 hover:scale-110 hover:text-blue-400 hover:underline"
+								className="transition-transform duration-200 hover:scale-110 hover:text-primary hover:underline"
 								href={website as Route}
 							>
 								{website}
