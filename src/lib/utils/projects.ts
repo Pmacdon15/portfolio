@@ -8,6 +8,14 @@ export const projects = [
 		githubUrl: 'https://github.com/Pmacdon15/landscape-friend',
 	},
 	{
+		id: 22,
+		title: 'Receipt Scanner Pro',
+		text: 'Turn a shoebox of receipts into a searchable, categorized record — photo, totals, and category saved in one pass.',
+		imagePath: '/receiptscannerpro.png',
+		url: 'https://receiptscannerpro.patmac.ca',
+		githubUrl: 'https://github.com/Pmacdon15/receipt-scanner',
+	},
+	{
 		id: 2,
 		title: 'Pardons Are Us',
 		text: 'Helping Canadians achieve record suspensions',
