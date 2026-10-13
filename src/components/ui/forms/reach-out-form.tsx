@@ -51,7 +51,7 @@ export function ReachOutForm() {
 	}
 
 	return (
-		<Card className="w-full border-2 shadow-2xl sm:max-w-4xl">
+		<Card className="w-full border-border bg-card/70 shadow-2xl backdrop-blur-md sm:max-w-2xl">
 			<CardHeader>
 				<CardTitle>Reach out</CardTitle>
 				<CardDescription>
@@ -93,7 +93,11 @@ export function ReachOutForm() {
 					>
 						Reset
 					</Button> */}
-					<Button form="form-reach-out" type="submit">
+					<Button
+						className="gradient-accent border-0 text-primary-foreground shadow-md shadow-primary/20"
+						form="form-reach-out"
+						type="submit"
+					>
 						Submit
 					</Button>
 				</Field>

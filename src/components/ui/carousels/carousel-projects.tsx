@@ -1,5 +1,7 @@
 'use client'
 import Autoplay from 'embla-carousel-autoplay'
+import { GitHubLogoIcon } from '@radix-ui/react-icons'
+import { ArrowUpRight } from 'lucide-react'
 import type { Route } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -41,12 +43,10 @@ export function CarouselProjects() {
 	}
 
 	const plugin = React.useRef(
-		Autoplay({ delay: 2000, stopOnInteraction: true }),
+		Autoplay({ delay: 3000, stopOnInteraction: true }),
 	)
 	return (
-		<div className="w-full rounded-sm border bg-secondary p-2 shadow-xl lg:w-5/6">
-			<h1 className="font-semibold text-2xl">Projects</h1>
-
+		<div className="w-full">
 			<Carousel
 				className="w-full"
 				onMouseEnter={plugin.current.stop}
@@ -63,20 +63,21 @@ export function CarouselProjects() {
 							className="basis-[85%] sm:basis-[65%] md:basis-[55%] lg:basis-[45%]"
 							key={project.id}
 						>
-							<Card className="h-[500px] md:h-[450px]">
-								<CardHeader>
-									<h1 className="font-semibold text-2xl">
-										{' '}
+							<Card className="flex h-full flex-col overflow-hidden border-border bg-card/70 backdrop-blur-md">
+								<CardHeader className="pb-3">
+									<h3 className="font-semibold text-xl tracking-tight">
 										{project.title}
-									</h1>
+									</h3>
 								</CardHeader>
-								<CardContent className="mt-[-24]">
-									<span className="">{project.text}</span>
+								<CardContent className="flex-1 pb-4">
+									<p className="text-muted-foreground text-sm leading-relaxed">
+										{project.text}
+									</p>
 								</CardContent>
-								<CardContent className="flex">
+								<CardContent className="pb-4">
 									<button
 										aria-label={`View ${project.title} image`}
-										className="mx-auto max-h-[250px] cursor-pointer overflow-hidden rounded-sm border-2"
+										className="w-full cursor-pointer overflow-hidden rounded-xl border border-border bg-muted/30"
 										onClick={() =>
 											handleImageClick(project.imagePath)
 										}
@@ -89,33 +90,43 @@ export function CarouselProjects() {
 										type="button"
 									>
 										<Image
-											alt={`Project Image ${project.id}`}
-											className="mx-auto overflow-hidden"
+											alt={`${project.title} preview`}
+											className="h-44 w-full object-cover"
 											height={300}
 											src={project.imagePath}
-											width={300}
+											width={400}
 										/>
 									</button>
 								</CardContent>
-								<CardFooter className="mt-auto flex w-full flex-col gap-4">
+								<CardFooter className="mt-auto flex w-full flex-wrap gap-3">
 									{project.url && (
-										<Link href={project.url as Route}>
+										<Link
+											className="flex-1"
+											href={project.url as Route}
+										>
 											<Button
+												className="gradient-accent w-full border-0 text-primary-foreground shadow-md shadow-primary/20"
+												size="sm"
 												type="button"
-												variant={'outline'}
 											>
-												{project.title}
+												Visit
+												<ArrowUpRight className="size-4" />
 											</Button>
 										</Link>
 									)}
-
 									{project.githubUrl && (
-										<Link href={project.githubUrl as Route}>
+										<Link
+											className="flex-1"
+											href={project.githubUrl as Route}
+										>
 											<Button
+												className="w-full"
+												size="sm"
 												type="button"
-												variant={'outline'}
+												variant="outline"
 											>
-												Visit the GitHub
+												<GitHubLogoIcon className="size-4" />
+												Code
 											</Button>
 										</Link>
 									)}
@@ -130,7 +141,7 @@ export function CarouselProjects() {
 
 			{fullScreenImage && (
 				<div
-					className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90"
+					className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
 					onClick={handleCloseFullScreen}
 					onKeyDown={handleFullScreenKeyDown}
 					role="button"
@@ -138,7 +149,7 @@ export function CarouselProjects() {
 				>
 					<Image
 						alt="Full Screen Image"
-						className="max-h-screen max-w-screen"
+						className="max-h-screen max-w-full rounded-xl"
 						height={600}
 						src={fullScreenImage}
 						width={800}

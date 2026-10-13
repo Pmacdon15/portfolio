@@ -11,10 +11,21 @@ import { experiences } from '@/lib/utils/resume/work'
 
 export default function Resume() {
 	return (
-		<div className="w-full rounded-md bg-secondary p-2 shadow-xl md:w-5/6">
-			<div className="flex flex-col gap-2 rounded-md bg-[url('/paper.jpeg')] bg-cover p-4">
-				<ContactInfo />
-				<h1 className="text-4xl">Patrick MacDonald</h1>
+		<div className="surface w-full rounded-2xl p-6 md:w-5/6 md:p-10">
+			<div className="flex flex-col gap-6">
+				<header className="flex flex-col gap-4 border-border border-b pb-6 md:flex-row md:items-end md:justify-between">
+					<div>
+						<h1 className="font-bold text-4xl tracking-tight md:text-5xl">
+							<span className="gradient-text">
+								Patrick MacDonald
+							</span>
+						</h1>
+						<p className="mt-1 text-muted-foreground">
+							Software Developer
+						</p>
+					</div>
+					<ContactInfo />
+				</header>
 				<Summary />
 				<SkillsComponent skills={skills} />
 				<Certifications certifications={certifications} />
@@ -28,26 +39,24 @@ export default function Resume() {
 
 function ContactInfo() {
 	return (
-		<div className="ml-auto">
-			<div>
-				<p className="italic">1-403-975-5053</p>
-				<p className="italic">pmacdonald15@gmail.com</p>
-				<p className="italic">github.com/Pmacdon15</p>
-				<p className="italic">Calgary, Alberta</p>
-			</div>
+		<div className="flex flex-col gap-0.5 text-muted-foreground text-sm md:text-right">
+			<p>1-403-975-5053</p>
+			<p>pmacdonald15@gmail.com</p>
+			<p>github.com/Pmacdon15</p>
+			<p>Calgary, Alberta</p>
 		</div>
 	)
 }
 
 function Summary() {
 	return (
-		<>
-			<h1 className="font-bold text-3xl">Summary</h1>
-			<p className="indent-4 text-lg">
-				skilled software developer with a strong foundation in Next.js,
+		<section className="flex flex-col gap-2">
+			<h2 className="font-bold text-2xl">Summary</h2>
+			<p className="indent-4 text-foreground/90 text-lg leading-relaxed">
+				Skilled software developer with a strong foundation in Next.js,
 				TypeScript, and custom React hooks, seeking opportunities in the
-				tech industry to gain hands-on experience in the tech Industry.
+				tech industry to gain hands-on experience.
 			</p>
-		</>
+		</section>
 	)
 }
