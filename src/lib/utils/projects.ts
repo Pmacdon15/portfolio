@@ -158,16 +158,16 @@ export const projects = [
 	},
 	{
 		id: 20,
-		title: 'Shenanigans Mac-Server-Face',
-		text: 'A server for HID attacks, executing PowerShell and Bash scripts on target systems.',
+		title: 'HID Attack Research Server',
+		text: 'A research server for studying HID and keystroke-injection (BadUSB) attacks. Built with Express, it hosts and delivers scripts to HID devices so the techniques behind these attacks can be understood — and defended against.',
 		imagePath: '/Shenanigans.jpeg',
-		githubUrl: 'https://github.com/Pmacdon15/MacServerFace',
+		githubUrl: 'https://github.com/Pmacdon15/hid-attack-research',
 	},
 	{
 		id: 21,
-		title: 'Next Phisher',
-		text: 'A Next.js phishing framework with decoy website and customizable phishing page.',
+		title: 'PhishSim Lab',
+		text: 'A phishing simulation platform for security awareness training, built with Next.js and WebSockets. It recreates credential-harvesting pages in a safe environment so people can learn to recognize, report, and stop real phishing attacks.',
 		imagePath: '/Shenanigans.jpeg',
-		githubUrl: 'https://github.com/Pmacdon15/nextphisher',
+		githubUrl: 'https://github.com/Pmacdon15/phishsim-lab',
 	},
 ]
