@@ -20,8 +20,8 @@ const geistMono = localFont({
 })
 
 export const metadata: Metadata = {
-	title: 'Patrick Macdonald',
-	description: 'Created and maintained by me personally Patrick Macdonald',
+	title: 'Patrick MacDonald',
+	description: 'Created and maintained by me personally Patrick MacDonald',
 }
 
 export default function RootLayout({

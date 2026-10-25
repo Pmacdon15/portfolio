@@ -12,7 +12,7 @@ export default function Header() {
 					Software Developer
 				</span>
 				<h1 className="font-bold text-4xl tracking-tight md:text-6xl">
-					<span className="gradient-text">Patrick Macdonald</span>
+					<span className="gradient-text">Patrick MacDonald</span>
 				</h1>
 				<p className="max-w-xl text-balance text-base text-muted-foreground leading-relaxed md:text-lg">
 					Building fast, reliable web apps with Next.js, TypeScript,

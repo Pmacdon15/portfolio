@@ -17,7 +17,7 @@ export default function ContentContainerImageRight({
 			</ContentContainerWrapper>
 			<div className="shrink-0 overflow-hidden rounded-2xl border border-border p-1.5 shadow-xl ring-1 ring-primary/20">
 				<Image
-					alt="Patrick Macdonald"
+					alt="Patrick MacDonald"
 					blurDataURL={'/placeholder.png'}
 					className="rounded-xl object-cover"
 					height={320}
