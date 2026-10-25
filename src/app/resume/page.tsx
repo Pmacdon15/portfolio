@@ -17,7 +17,7 @@ export default function Resume() {
 					<div>
 						<h1 className="font-bold text-4xl tracking-tight md:text-5xl">
 							<span className="gradient-text">
-								Patrick MacDonald
+								Patrick Macdonald
 							</span>
 						</h1>
 						<p className="mt-1 text-muted-foreground">

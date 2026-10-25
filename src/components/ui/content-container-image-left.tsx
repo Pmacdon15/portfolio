@@ -12,7 +12,7 @@ export default function ContentContainerImageLeft({
 		<div className="flex w-full flex-col items-center gap-6 md:flex-row lg:w-5/6">
 			<div className="shrink-0 overflow-hidden rounded-2xl border border-border p-1.5 shadow-xl ring-1 ring-primary/20">
 				<Image
-					alt="Patrick MacDonald"
+					alt="Patrick Macdonald"
 					blurDataURL={'/placeholder.png'}
 					className="rounded-xl object-cover"
 					height={220}
