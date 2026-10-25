@@ -21,17 +21,18 @@ export default function Resume() {
 							</span>
 						</h1>
 						<p className="mt-1 text-muted-foreground">
-							Software Developer
+							Web Developer — Next.js, React & TypeScript
 						</p>
 					</div>
 					<ContactInfo />
 				</header>
 				<Summary />
 				<SkillsComponent skills={skills} />
-				<Certifications certifications={certifications} />
 				<EducationComponent education={education} />
+				<Certifications certifications={certifications} />
 				<ProjectsComponent projects={projects} />
 				<WorkComponent experiences={experiences} />
+				<AdditionalInfo />
 			</div>
 		</div>
 	)
@@ -40,10 +41,11 @@ export default function Resume() {
 function ContactInfo() {
 	return (
 		<div className="flex flex-col gap-0.5 text-muted-foreground text-sm md:text-right">
-			<p>1-403-975-5053</p>
-			<p>pmacdonald15@gmail.com</p>
+			<p>patrick@patmac.ca</p>
+			<p>1 (403) 975-5053</p>
 			<p>github.com/Pmacdon15</p>
-			<p>Calgary, Alberta</p>
+			<p>linkedin.com/in/patrick-macdonald-231640285</p>
+			<p>Calgary, AB</p>
 		</div>
 	)
 }
@@ -53,9 +55,33 @@ function Summary() {
 		<section className="flex flex-col gap-2">
 			<h2 className="font-bold text-2xl">Summary</h2>
 			<p className="indent-4 text-foreground/90 text-lg leading-relaxed">
-				Skilled software developer with a strong foundation in Next.js,
-				TypeScript, and custom React hooks, seeking opportunities in the
-				tech industry to gain hands-on experience.
+				Web developer and Software Development Diploma graduate (Bow
+				Valley College, May 2025, 3.95 GPA) who builds and runs live
+				web applications with Next.js, TypeScript, and React. Creator
+				of Landscape Friend, a live product that helps landscaping
+				businesses schedule jobs, email clients, and send invoices,
+				along with invoicing and e-commerce tools deployed on Vercel
+				with Neon PostgreSQL and Clerk authentication. Particularly
+				strong in modern Next.js — server and client components and
+				cache components. Looking for a developer role in Calgary
+				where that shipping record counts. Brings more than 13 years
+				of professional driving and operations work and 10 years of
+				customer service behind it: dependable, safety-conscious, and
+				used to being accountable to clients every day.
+			</p>
+		</section>
+	)
+}
+
+function AdditionalInfo() {
+	return (
+		<section className="flex flex-col gap-2">
+			<h2 className="font-bold text-2xl">Additional Information</h2>
+			<p className="indent-4 text-foreground/90 text-lg leading-relaxed">
+				Canadian citizen, authorized to work in Canada without
+				sponsorship. Portfolio, live applications, and code are
+				available at patmac.ca and github.com/Pmacdon15 — every
+				project listed above can be opened and tried.
 			</p>
 		</section>
 	)

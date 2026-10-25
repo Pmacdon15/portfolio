@@ -1,25 +1,24 @@
 import type { Skills } from '@/types/types'
 
 export const skills: (Skills & { index: number })[] = [
-	{ index: 0, description: 'Team collaboration and leadership' },
+	{
+		index: 0,
+		description:
+			'Languages: TypeScript, JavaScript, HTML, CSS, SQL (PostgreSQL), Java, Python, C#',
+	},
 	{
 		index: 1,
 		description:
-			'Programming Languages: Java, C#, Python, TypeScript, JavaScript, HTML, CSS, SQL, C++',
+			'Frontend: React, Next.js (App Router, Server Components, Cache Components), Tailwind CSS',
 	},
 	{
 		index: 2,
 		description:
-			'Tools/Technologies: VS Code, VS Studio, Android Studio, React, NextJS, Node.js, jQuery, Express, Vercel, TypeScript, Tailwind CSS',
+			'Backend & Data: Node.js, Bun, REST APIs, PostgreSQL (Neon), Clerk authentication',
 	},
 	{
 		index: 3,
 		description:
-			'Excellent communication, customer service, time management, organization, and decision-making',
+			'Tools & Platforms: Git, GitHub, Vercel, WordPress / WooCommerce',
 	},
-	{
-		index: 4,
-		description: 'Experience operating tractor-trailers and buses',
-	},
-	{ index: 5, description: 'Adaptable in fast-paced environments' },
 ]
