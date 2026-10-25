@@ -20,7 +20,7 @@ const geistMono = localFont({
 })
 
 export const metadata: Metadata = {
-	title: 'Patrick McDonald',
+	title: 'Patrick MacDonald',
 	description: 'Created and maintained by me personally Patrick MacDonald',
 }
 
