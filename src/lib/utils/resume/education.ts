@@ -2,8 +2,8 @@ import type { Education } from '../../../types/types'
 
 export const education: Education[] = [
 	{
-		school: 'BowValley College',
-		program: 'Software Development',
+		school: 'Bow Valley College',
+		program: 'Software Development Diploma',
 		gpa: '3.95',
 		graduation: 'May 2025',
 	},
