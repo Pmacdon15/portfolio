@@ -8,12 +8,12 @@ export const projects = [
 		githubUrl: 'https://github.com/Pmacdon15/landscape-friend',
 	},
 	{
-		id: 22,
-		title: 'Receipt Scanner Pro',
-		text: 'Turn a shoebox of receipts into a searchable, categorized record — photo, totals, and category saved in one pass.',
-		imagePath: '/receiptscannerpro.png',
-		url: 'https://receiptscannerpro.patmac.ca',
-		githubUrl: 'https://github.com/Pmacdon15/receipt-scanner',
+		id: 23,
+		title: 'Budget',
+		text: 'A personal monthly budgeting app with fixed bills, AI receipt scanning, account balances, reports, and an MCP connector so your AI can log spending from your email.',
+		imagePath: '/budget.png',
+		url: 'https://budget.patmac.ca',
+		githubUrl: 'https://github.com/Pmacdon15/Budget',
 	},
 	{
 		id: 2,
@@ -54,14 +54,6 @@ export const projects = [
 		imagePath: '/stocks.png',
 		githubUrl: 'https://github.com/Pmacdon15/stocks',
 		url: 'https://stocks.patmac.ca',
-	},
-	{
-		id: 7,
-		title: "Pat's Blogs",
-		text: 'A modern blog site with image, code, and text upload, and Neon database storage.',
-		imagePath: '/blogs.png',
-		githubUrl: 'https://github.com/Pmacdon15/blog',
-		url: 'https://blog.patmac.ca/',
 	},
 	{
 		id: 8,
@@ -147,14 +139,6 @@ export const projects = [
 		imagePath: '/GithubStats.png',
 		githubUrl: 'https://github.com/Pmacdon15/github-stats.git',
 		url: 'https://gh-stats.patmac.ca/',
-	},
-	{
-		id: 19,
-		title: 'Next-Todo',
-		text: 'A full-stack Todo app with OAuth authentication, TanStack Query, and Neon PostgreSQL database.',
-		imagePath: '/todo-next.png',
-		githubUrl: 'https://github.com/Pmacdon15/todo-next',
-		url: 'https://www.next-todo.patmac.ca/',
 	},
 	{
 		id: 20,
