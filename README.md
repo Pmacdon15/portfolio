@@ -20,6 +20,25 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Tests
+
+Tests use [Vitest](https://vitest.dev) and React Testing Library, and live in `tests/`. They are split into projects:
+
+| Project      | What it covers                                              | Command                   |
+| ------------ | ----------------------------------------------------------- | ------------------------- |
+| `unit`       | `src/lib` (schemas, hooks, the Resend action, the mutation, data) and the no-async-pages check | `bun run test:unit`       |
+| `components` | Everything in `src/components`                              | `bun run test:components` |
+| `app`        | The layout and pages in `src/app`                           | `bun run test:app`        |
+| `build`      | Runs `next build` and checks every page stays static (○)    | `bun run test:build`      |
+
+```bash
+bun run test           # all projects
+bun run test:coverage  # with coverage; fails below 100%
+bun run test:watch
+```
+
+CI (`.github/workflows/`) runs Tests (each project in parallel, then a merged 100% coverage check), Type check, Biome (autofixes and commits on PRs) and Audit.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
