@@ -22,7 +22,7 @@ export default function ContentContainerImageLeft({
 				/>
 			</div>
 			<ContentContainerWrapper>
-				<p className="indent-4 text-base leading-relaxed text-foreground/90 md:text-lg">
+				<p className="indent-4 text-base text-foreground/90 leading-relaxed md:text-lg">
 					{text}
 				</p>
 			</ContentContainerWrapper>

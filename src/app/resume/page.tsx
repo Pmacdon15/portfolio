@@ -56,16 +56,16 @@ function Summary() {
 			<h2 className="font-bold text-2xl">Summary</h2>
 			<p className="indent-4 text-foreground/90 text-lg leading-relaxed">
 				Web developer and Software Development Diploma graduate (Bow
-				Valley College, May 2025, 3.95 GPA) who builds and runs live
-				web applications with Next.js, TypeScript, and React. Creator
-				of Landscape Friend, a live product that helps landscaping
+				Valley College, May 2025, 3.95 GPA) who builds and runs live web
+				applications with Next.js, TypeScript, and React. Creator of
+				Landscape Friend, a live product that helps landscaping
 				businesses schedule jobs, email clients, and send invoices,
 				along with invoicing and e-commerce tools deployed on Vercel
 				with Neon PostgreSQL and Clerk authentication. Particularly
 				strong in modern Next.js — server and client components and
-				cache components. Looking for a developer role in Calgary
-				where that shipping record counts. Brings more than 13 years
-				of professional driving and operations work and 10 years of
+				cache components. Looking for a developer role in Calgary where
+				that shipping record counts. Brings more than 13 years of
+				professional driving and operations work and 10 years of
 				customer service behind it: dependable, safety-conscious, and
 				used to being accountable to clients every day.
 			</p>
@@ -80,8 +80,8 @@ function AdditionalInfo() {
 			<p className="indent-4 text-foreground/90 text-lg leading-relaxed">
 				Canadian citizen, authorized to work in Canada without
 				sponsorship. Portfolio, live applications, and code are
-				available at patmac.ca and github.com/Pmacdon15 — every
-				project listed above can be opened and tried.
+				available at patmac.ca and github.com/Pmacdon15 — every project
+				listed above can be opened and tried.
 			</p>
 		</section>
 	)

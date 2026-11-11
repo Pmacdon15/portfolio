@@ -4,7 +4,7 @@ export default function Header() {
 			{/* soft accent glow behind the title */}
 			<div
 				aria-hidden
-				className="-translate-x-1/2 pointer-events-none absolute top-0 left-1/2 h-40 w-2/3 rounded-full bg-primary/25 blur-3xl"
+				className="pointer-events-none absolute top-0 left-1/2 h-40 w-2/3 -translate-x-1/2 rounded-full bg-primary/25 blur-3xl"
 			/>
 			<div className="relative flex flex-col items-center gap-3">
 				<span className="inline-flex items-center gap-2 rounded-full border border-border bg-muted/60 px-3 py-1 font-medium text-muted-foreground text-xs uppercase tracking-widest">

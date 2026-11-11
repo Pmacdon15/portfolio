@@ -11,7 +11,7 @@ export default function ContentContainerImageRight({
 	return (
 		<div className="flex w-full flex-col items-center gap-6 md:flex-row lg:w-5/6">
 			<ContentContainerWrapper>
-				<p className="indent-4 text-base leading-relaxed text-foreground/90 md:text-lg">
+				<p className="indent-4 text-base text-foreground/90 leading-relaxed md:text-lg">
 					{text}
 				</p>
 			</ContentContainerWrapper>

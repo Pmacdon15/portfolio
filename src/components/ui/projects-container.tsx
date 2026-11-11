@@ -13,7 +13,8 @@ export default function ProjectsContainer() {
 					<span className="gradient-text">Projects</span>
 				</h2>
 				<p className="max-w-xl text-muted-foreground">
-					A selection of projects I&apos;ve designed, built, and shipped.
+					A selection of projects I&apos;ve designed, built, and
+					shipped.
 				</p>
 			</div>
 			{isSmallScreen ? <CarouselProjects /> : <ProjectsCards />}

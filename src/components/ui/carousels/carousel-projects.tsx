@@ -1,6 +1,6 @@
 'use client'
-import Autoplay from 'embla-carousel-autoplay'
 import { GitHubLogoIcon } from '@radix-ui/react-icons'
+import Autoplay from 'embla-carousel-autoplay'
 import { ArrowUpRight } from 'lucide-react'
 import type { Route } from 'next'
 import Image from 'next/image'

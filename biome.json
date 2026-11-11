@@ -56,5 +56,17 @@
 		"parser": {
 			"tailwindDirectives": true
 		}
-	}
+	},
+	"overrides": [
+		{
+			"includes": ["**/*.css"],
+			"assist": {
+				"actions": {
+					"source": {
+						"useSortedProperties": "off"
+					}
+				}
+			}
+		}
+	]
 }

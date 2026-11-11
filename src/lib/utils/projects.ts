@@ -47,7 +47,7 @@ export const projects = [
 		githubUrl: 'https://github.com/Pmacdon15/clock-out',
 		url: 'https://clockout.patmac.ca',
 	},
-		{
+	{
 		id: 6,
 		title: 'Stocks',
 		text: 'The ultimate market simulator. Real-time data, professional tools, and $10k to test your edge.',

@@ -5,7 +5,7 @@ import ContentContainerWrapper from './content-container-wrapper'
 export default function ContentContainer({ text }: { text: string }) {
 	return (
 		<ContentContainerWrapper>
-			<p className="indent-4 text-center text-base leading-relaxed text-foreground/90 md:text-lg">
+			<p className="text-center indent-4 text-base text-foreground/90 leading-relaxed md:text-lg">
 				{text}
 			</p>
 			<Link className="mx-auto mt-2" href={'/contact'}>
